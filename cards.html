@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="scss/main.css">
+  
+   
+</head>
+
+<body>
+    
+    <section class="linkbar">
+        <li><a href="/cards.html?type=en-linea" class="linkbar__link">Ver documentos en linea</a></li>
+        <li><a href="/cards.html?type=en-biblioteca" class="linkbar__link">Ver ubicados en bibiotecas</a></li>
+    </section>
+
+
+    <!--probando si funciona el checkbox -->
+        <section class="listcontainer">
+            <form class="formcontainer">
+                <a href="/cards.html?type=cardstatusOnline" class="listcontainer__title">Fichas</a>
+            </form>
+            <div class="line"></div>
+
+            <form class="filters ">
+                <h2>Filtro</h2>
+                
+                <label for="cardstatus" class="cardForm__label">Estado del documento</label>
+            
+                <select id="cardstatus" class="cardForm__inputfilter" name="cardstatus">
+                    <option value="">Tipo</option>
+                    <option value="en-linea">En linea</option>
+                    <option value="en-biblioteca">En biblioteca</option>
+                </select>
+                
+    <!-- <label for="pokecollection" class="cardForm__label">Colección</label>-->  
+                  
+    <label for="year" class="cardForm__label">Decadas</label>
+               
+    <select id="year" class="cardForm__inputfilter" name="year">
+        <option value="">Escoger Decada</option>
+        <option value="0">Entre 1920 y 1940</option>
+        <option value="1">Entre 1940 a 1960</option>
+        <option value="2">Mayor a 1960</option>
+    </select>
+                
+            
+                <select id="department" class="cardForm__inputfilter" name="department">
+                  
+                    <option value=" ">--seleccione un departamento--</option>
+                    <option value="Amazonas">Amazonas</option>
+                    <option value="Antioquia">Antioquia</option>
+                    <option value="Arauca">Arauca</option>
+                    <option value="Atlantico">Atlántico</option>
+                    <option value="Bolívar">Bolívar</option>
+                    <option value="Boyacá">Boyacá</option>
+                    <option value="Caldas">Caldas</option>
+                    <option value="Caquetá">Caquetá</option>
+                    <option value="Casanare">Casanare</option>
+                    <option value="Cauca">Cauca</option>
+                    <option value="Cesar">Cesar</option>
+                    <option value="Chocó">Chocó</option>
+                    <option value="Córdoba">Córdoba</option>
+                    <option value="Cundinamarca">Cundinamarca</option>
+                    <option value="Guainía">Guainía</option>
+                    <option value="Guaviare">Guaviare</option>
+                    <option value="Huila">Huila</option>
+                    <option value="La Guajira">La Guajira</option>
+                    <option value="Magdalena">Magdalena</option>
+                    <option value="Meta">Meta</option>
+                    <option value="Nariño">Nariño</option>
+                    <option value="Norte de Santander">Norte de Santander</option>
+                    <option value="Putumayo">Putumayo</option>
+                    <option value="Quindío">Quindío</option>
+                    <option value="Risaralda">Risaralda</option>
+                    <option value="San Andrés y Providencia">San Andrés y Providencia</option>
+                    <option value="Santander">Santander</option>
+                    <option value="Sucre">Sucre</option>
+                    <option value="Tolima">Tolima</option>
+                    <option value="Valle del Cauca">Valle del Cauca</option>
+                    <option value="Vaupés">Vaupés</option>
+                    <option value="Vichada">Vichada</option>
+                </select>
+
+                <h2 for="order">Ordenar</h2>
+    <!-- ordenar por año -->  
+               
+                <select id="order" class="cardForm__inputfilter" name="order">
+                    <option value="">Ordenar por</option>
+                    <option value="price_asc">precio más barato a mas caro</option>
+                    <option value="price_desc">precio más caro a mas barato)</option>
+                    <option value="Alpha">Alfabetico(A-z)</option>
+                </select>
+            
+            </form>
+            <section class="list">
+            </section>
+        </section>
+    
+
+    
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-storage.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-auth.js"></script>
+
+    <script src="./script/authUtils.js"></script>
+    <script src="./script/authModal.js"></script>
+    <script src="./script/general.js"></script>
+    <script src="./script/cards.js"></script>
+    
+    
+
+
+</body>
+
+</html>

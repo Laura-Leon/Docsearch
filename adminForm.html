@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>card Form</title>
+    
+     <link rel="stylesheet" href = "scss/main.css">
+
+
+</head>
+<body>
+
+ <!--header start -->
+ <header class="header">
+    <section class="header__discover">
+        
+    </section>
+   
+    <a class = "product" href="./cards.html" ><img class="header__imglogo" src="images/logo.PNG"></a>
+    <section class="header__information">
+       
+        <section class="btn">
+           <section class = "authButtons"></section>
+    <a class ="formBtn hidden showLoggedAdmin" href="/productForm.html" >Ir a forms</a>
+
+        </section>
+    </section>
+     <a href="/adminview.html" class= "adminview">Documentos nuevos<span></span></a>
+</header>
+<!--header finish -->
+
+<form class="cardForm">
+    <h2 class="cardForm__loading hidden">Cargando...</h2>
+    <h2 class="cardForm__success hidden">Documento agregado exitosamente</h2>
+    <h2 class="cardForm__error hidden">ha ocurrido un error, intente nuevamente</h2>
+
+    <!--inputs -->
+
+    <label class="cardForm__label" for="author">Nombre del autor</label>
+    <input class = "cardForm__input" id= "author" name="author" type="text" placeholder="Escribe el nombre del autor">
+
+    <label class="cardForm__label" for="year">Año</label>
+    <input class = "cardForm__input" id= "year" name="year" type="text" placeholder="Escribe el nombre">
+    
+    <label class="cardForm__label" for="title">Título</label>
+    <input class = "cardForm__input" id= "title" name="title" type="text" placeholder="Escribe el nombre">
+
+    <label class="cardForm__label" for="source">Fuente</label>
+    <input class = "cardForm__input" id= "source" name="source" type="text" placeholder="Escribe el nombre">
+
+    <label class="cardForm__label" for="link">Enlace / link</label>
+    <input class = "cardForm__input" id= "link" name="link" type="text" placeholder="Escribe el nombre">
+
+    <label class="cardForm__label" for="keyword">Palabras clave / Descriptor temático</label>
+    <input class = "cardForm__input" id= "keyword" name="keyword" type="text" placeholder="Escribe el nombre">
+
+<!--option department -->
+<label for ="department"class = "cardForm__label">Departamento</label>
+<select id ="department" class="cardForm__input" name="department">
+    <option value="">--select a type--</option>
+    <option value="Amazonas">Amazonas</option>
+    <option value="Antioquia">Antioquia</option>
+    <option value="Arauca">Arauca</option>
+    <option value="Atlantico">Atlántico</option>
+    <option value="Bolívar">Bolívar</option>
+    <option value="Boyacá">Boyacá</option>
+    <option value="Caldas">Caldas</option>
+    <option value="Caquetá">Caquetá</option>
+    <option value="Casanare">Casanare</option>
+    <option value="Cauca">Cauca</option>
+    <option value="Cesar">Cesar</option>
+    <option value="Chocó">Chocó</option>
+    <option value="Córdoba">Córdoba</option>
+    <option value="Cundinamarca">Cundinamarca</option>
+    <option value="Guainía">Guainía</option>
+    <option value="Guaviare">Guaviare</option>
+    <option value="Huila">Huila</option>
+    <option value="La Guajira">La Guajira</option>
+    <option value="Magdalena">Magdalena</option>
+    <option value="Meta">Meta</option>
+    <option value="Nariño">Nariño</option>
+    <option value="Norte de Santander">Norte de Santander</option>
+    <option value="Putumayo">Putumayo</option>
+    <option value="Quindío">Quindío</option>
+    <option value="Risaralda">Risaralda</option>
+    <option value="San Andrés y Providencia">San Andrés y Providencia</option>
+    <option value="Santander">Santander</option>
+    <option value="Sucre">Sucre</option>
+    <option value="Tolima">Tolima</option>
+    <option value="Valle del Cauca">Valle del Cauca</option>
+    <option value="Vaupés">Vaupés</option>
+    <option value="Vichada">Vichada</option>
+
+
+</select>
+    <!--inputs -->
+    <label class="cardForm__label" for="lat">Latitud</label>
+    <input class = "cardForm__input" id= "lat" name="lat" type="text" placeholder="Escribe el nombre">
+
+    <label class="cardForm__label" for="long">Longitud</label>
+    <input class = "cardForm__input" id= "long" name="long" type="text" placeholder="Escribe el nombre">
+
+<!--option cardstatus -->
+    <label for ="cardstatus"class = "cardForm__label">Estado del documento</label>
+    <select id ="cardstatus" class="cardForm__input" name="cardstatus">
+        <option value="">--select a type--</option>
+        <option value="en-linea">En linea</option>
+        <option value="en-biblioteca">En biblioteca</option>
+    </select>
+
+
+<!--imagen -->
+
+<label for="image" class="productForm__label">Image</label>
+<div class="productForm__images"></div>
+<input accept=".jpg, .png, .webp, .jfif" id="image" class="productForm__input" name="image" type="file">
+    <button class="cardForm__btn" type ="submit">Enviar</button>
+
+</form>
+
+<script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-firestore.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-storage.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-auth.js"></script>
+
+<script src="./script/general.js"></script>
+<script src="./script/authUtils.js"></script>
+
+<script src="./script/adminForm.js"></script>
+</body>
+</html>

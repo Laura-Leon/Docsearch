@@ -1,0 +1,72 @@
+.cardForm {
+  display: flex;
+  margin: 0 auto;
+  flex-direction: column;
+  width: 60%;
+  margin: 0 auto;
+  flex-direction: column;
+}
+.cardForm__btn {
+  margin-top: 15px;
+  display: block;
+}
+.cardForm__success {
+  color: rgb(94, 218, 145);
+}
+.cardForm__loading {
+  color: rgb(137, 168, 226);
+}
+.cardForm__error {
+  color: rgb(235, 108, 108);
+}
+.cardForm__img {
+  width: 100px;
+  margin: 4px 10px 0 0;
+}
+.cardForm__images {
+  display: flex;
+}
+
+.cardForm__input {
+  color: #736BD1;
+}
+
+.field__label,
+.cardForm__label {
+  display: block;
+  margin-top: 10px;
+}
+.field__label--checkbox,
+.cardForm__label--checkbox {
+  margin-top: 2px;
+  margin-left: 10px;
+}
+.field__input,
+.cardForm__input {
+  display: block;
+  background: #fff;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  outline: 0;
+  box-shadow: none;
+  border: 0 !important;
+  background-image: none;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+.adminview {
+  border-radius: 10px;
+  border: 2px solid #736BD1;
+  color: #736BD1;
+  font-family: Quicksand;
+  width: 150px;
+  padding-left: 5px;
+  background: none;
+  overflow: hidden;
+  text-decoration: none;
+}
+
+h2 {
+  block-size: auto;
+}/*# sourceMappingURL=adminForm.css.map */

@@ -1,0 +1,123 @@
+const list = document.querySelector('.list');
+
+
+const handleCollectionResult = (querySnapshot) => {
+    list.innerHTML = '';
+    querySnapshot.forEach((doc) => {
+        const data = doc.data();
+        const card = document.createElement('div');
+       
+        card.innerHTML = `
+        <div class="Prodcontainer">
+  
+            <div class="card__info">
+             <h1 class=" =card__title">
+        ${data.title}
+         </h1>
+        <h3 class="card__price">${data.author}</h3>
+        <h3 class="card__price">${data.year}</h3>
+        <a href="${data.link}" target="_blank" >Click para ir a la página</a>
+        <h3 class="card__price">${data.source}</h3>
+        <h3 class="card__price">${data.keyword}</h3>
+        <h3 class="card__price">${data.department}</h3>
+        <h3 class="card__price">${data.cardstatus}</h3>
+        </div>
+       
+
+        <button class= "card__cartBtn">Agregar a favoritos</button>
+        <button class ="card__deleteBtn hidden showLoggedAdmin"><img class="card__img", src="images/delete.svg"alt=""></button>
+   </div>
+        `;
+
+        list.appendChild(card);
+
+        //deletebutton
+        const deleteBtn = card.querySelector('.card__deleteBtn');
+        deleteBtn.addEventListener('click', function () {
+            //delete element
+            db.collection('cards').doc(doc.id).delete()
+                .then(() => {
+                    console.log("Document successfully deleted!");
+
+                }).catch((error) => {
+                    console.error("Error removing document: ", error);
+                });
+        });
+        //
+        const cartBtn = card.querySelector('.card__cartBtn');
+        cartBtn.addEventListener('click', function () {
+            addToMyCart({
+                ...data,
+                id: doc.id,
+            });
+        });
+    });
+}
+
+const filters = document.querySelector('.filters');
+
+filters.addEventListener('change', function () {
+
+    let cardsCollection = db.collection('cards');
+    if (filters.cardstatus.value) {
+        cardsCollection = cardsCollection.where('cardstatus', '==', filters.cardstatus.value);
+    }
+
+    const cardstatuss = [];
+
+    if (cardstatuss.length > 0) {
+        cardsCollection = cardsCollection.where('cardstatus', 'in', cardstatuss);
+    }
+
+
+    if (filters.year.value) {
+        switch (filters.year.value) {
+            case '0':
+                cardsCollection = cardsCollection.where('year', '<', 1940);
+                break;
+            case '1':
+                cardsCollection = cardsCollection.where('year', '>=', 1940);
+                cardsCollection = cardsCollection.where('year', '<', 1960);
+
+                break;
+            case '2':
+                cardsCollection = cardsCollection.where('year', '>=', 1960);
+                break;
+        }
+
+    }
+
+    if (filters.department.value) {
+        cardsCollection = cardsCollection.where('department', '==', filters.department.value);
+    }
+
+
+    if (filters.order.value) {
+        switch (filters.order.value) {
+            case 'price_asc':
+                cardsCollection = cardsCollection.orderBy('price', 'asc');
+                break;
+            case 'price_desc':
+                cardsCollection = cardsCollection.orderBy('price', 'desc');
+                break;
+            case 'Alpha':
+                if (filters.price.value) {
+                    cardsCollection = cardsCollection.orderBy('price', 'asc');
+                }
+                cardsCollection = cardsCollection.orderBy('name', 'asc');
+                break;
+        }
+    }
+    cardsCollection.get().then(handleCollectionResult);
+});
+
+
+let cardsCollection = db.collection('cards')
+const params = new URLSearchParams(location.search);
+if (params.get('department')) {
+    cardsCollection = cardsCollection.where('department', '==', params.get('department'));
+}
+if (params.get('pokecollection')) {
+    cardsCollection = cardsCollection.where('pokecollection', '==', params.get('pokecollection'));
+}
+cardsCollection.get().then(handleCollectionResult);

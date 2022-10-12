@@ -1,0 +1,64 @@
+.checkout {
+display: flex;
+justify-content: center;
+width: 700px;
+margin: 0 auto;
+box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+&__list{
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    justify-content: center;
+}
+&__sumary{
+    padding: 20px;
+  
+   flex-grow: 1;
+}
+}
+.checkout__total{
+    font-family: Quicksand;
+    color: #736BD1;
+    width: 100px;
+    padding-bottom: 5px;
+}
+.card__img--check{
+    width: 10%;
+}
+.card__title--check{
+font-size: 1em;
+}
+.field__label{
+    color: #736BD1;
+    width: 100px;
+    padding-bottom: 5px;
+    font-family: Quicksand;
+
+    font-weight:lighter ;
+
+}
+.submit{
+    margin:20px;
+}
+ //para telefonos
+ @media screen and (max-width:700px){
+.checkout{
+    flex-direction: column;
+    width: 300px;
+  
+
+}
+.checkout__list{
+width: 300px;
+margin: 0;
+
+}
+.checkout__sumary{
+    padding: 20px;
+    width: 300px;
+    margin: 0;
+
+}
+
+ }
