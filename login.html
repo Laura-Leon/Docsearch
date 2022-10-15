@@ -8,8 +8,7 @@
 
     <link rel="stylesheet" href="./scss/styles.css"/>
     <link rel="stylesheet" href = "scss/main.css">
-    <link rel="stylesheet" href="scss/fontello.css">
-
+    
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -18,6 +17,8 @@
 </head>
 
 <body>
+  <STYLE>A {text-decoration: none;} </STYLE>
+  
   <div class="contenedor">
     
         <div class="contenedor__iniciarsesion">
@@ -26,14 +27,24 @@
             <p class="p__subtitulo">Antropológicos Colombianos</p>
             <p class="p__subtitulo">a solo un paso!</p>
         </div>
-        <div class="card">
+        <div class="login__card">
           <div class="login">
-              <p class="header">Iniciar sesion</p>
-              <input type="text" id="mail" name="mail" class="text-box"><br><br>
-              <input type="text" id="pass" name="pass" class="text-box"><br><br>
-              <button>Ingresar</button>
-              <p>Soy administrador</p>
-              <p>¿Aun no tienes cuenta?</p><a>Registrate</a>
+              <p class="p__header">Iniciar sesión</p>
+              <input type="text" id="mail" name="mail" placeholder= "Correo electrónico" class="text__box"><br><br>
+              <input type="text" id="pass" name="pass" placeholder= "Contraseña" class="text__box"><br><br>
+
+              <button type="button" class="boton__iniciarsesion">Ingresar</button>
+
+              <div class="descripcion__iniciar">
+                <a href="#colocarpaginadeadmin">Soy administrador</a> 
+                <p>¿Aún no tienes cuenta? <a href="#colocarpaginaderegistrarse">Regístrate</a> </p>
+
+
+              </div>
+              
+
+
+              
           </div>
         </div> 
   </div>

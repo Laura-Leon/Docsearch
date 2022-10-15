@@ -32,21 +32,21 @@ body {
     width: fit-content;
 }
 
-.card{
-  margin-left: 20%;
+.login__card{
+  margin-left: 12%;
   background-color: white;
-  box-shadow: 1px 1px 1px 1px #b5b7ba;
   text-align: center;
-  width: fit-content;
+  width: 27%;
   
 }
 
-.header{
+.p__header{
     color: #736BD1;
-    font-size: 32px;
+    font-size: 22px;
     font-family: 'Quicksand', sans-serif;
     font-weight: bolder;
     margin-bottom: 2rem;
+    margin-top: 23%;
 }
 
 .login{
@@ -54,10 +54,39 @@ body {
  
 }
 
-.text-box{
-  border-radius: 25px;
+.text__box{
+    border-radius: 25px;
     border: 2px solid #736BD1;
     padding-top: 5%;
-    padding-bottom: 5%; 
+    padding-bottom: 2%; 
     width: 300px;
+    font-family: 'Quicksand', sans-serif;
+   
+
+}
+
+.descripcion__iniciar{
+  font-family: 'Quicksand', sans-serif;
+  font-size: 15px;
+  margin-top: 8%;
+  color: #736BD1;
+  text-decoration: none;
+  
+
+}
+
+.boton__iniciarsesion{
+  font-family: 'Quicksand', sans-serif;
+  font-size: 15px;
+  width: 30%;
+  margin-top: 5%;
+  
+}
+
+::placeholder {
+  color: #746bd167;
+  font-size: 15px;
+  padding-left: 5%;
+  margin-top: 20%;
+  
 }

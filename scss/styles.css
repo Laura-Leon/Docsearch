@@ -9,6 +9,8 @@ body {
 }
 
 .contenedor {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   padding-top: 18%;
   padding-left: 10%;
@@ -17,7 +19,7 @@ body {
 .h1__titulo {
   color: white;
   font-size: 85px;
-  font-family: "Quicksand", sans-serif;
+  font-family: 'Quicksand', sans-serif;
   font-weight: bolder;
   margin-bottom: 2rem;
 }
@@ -25,41 +27,84 @@ body {
 .p__subtitulo {
   color: white;
   font-size: 50px;
-  font-family: "Quicksand", sans-serif;
+  font-family: 'Quicksand', sans-serif;
   font-weight: 500;
-  background: rgba(79, 70, 184, 0.4509803922);
+  background: #4f46b873;
   margin-bottom: 0.2rem;
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
 }
 
-.card {
-  margin-left: 20%;
+.login__card {
+  margin-left: 12%;
   background-color: white;
-  box-shadow: 1px 1px 1px 1px #b5b7ba;
   text-align: center;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
+  width: 27%;
 }
 
-.header {
+.p__header {
   color: #736BD1;
-  font-size: 32px;
-  font-family: "Quicksand", sans-serif;
+  font-size: 22px;
+  font-family: 'Quicksand', sans-serif;
   font-weight: bolder;
   margin-bottom: 2rem;
+  margin-top: 23%;
 }
 
 .login {
   width: auto;
 }
 
-.text-box {
+.text__box {
   border-radius: 25px;
   border: 2px solid #736BD1;
   padding-top: 5%;
-  padding-bottom: 5%;
+  padding-bottom: 2%;
   width: 300px;
-}/*# sourceMappingURL=styles.css.map */
+  font-family: 'Quicksand', sans-serif;
+}
+
+.descripcion__iniciar {
+  font-family: 'Quicksand', sans-serif;
+  font-size: 15px;
+  margin-top: 8%;
+  color: #736BD1;
+  text-decoration: none;
+}
+
+.boton__iniciarsesion {
+  font-family: 'Quicksand', sans-serif;
+  font-size: 15px;
+  width: 30%;
+  margin-top: 5%;
+}
+
+::-webkit-input-placeholder {
+  color: #746bd167;
+  font-size: 15px;
+  padding-left: 5%;
+  margin-top: 20%;
+}
+
+:-ms-input-placeholder {
+  color: #746bd167;
+  font-size: 15px;
+  padding-left: 5%;
+  margin-top: 20%;
+}
+
+::-ms-input-placeholder {
+  color: #746bd167;
+  font-size: 15px;
+  padding-left: 5%;
+  margin-top: 20%;
+}
+
+::placeholder {
+  color: #746bd167;
+  font-size: 15px;
+  padding-left: 5%;
+  margin-top: 20%;
+}
+/*# sourceMappingURL=styles.css.map */

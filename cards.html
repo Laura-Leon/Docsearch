@@ -13,24 +13,41 @@
 </head>
 
 <body>
+
+    <STYLE>A {text-decoration: none;} </STYLE>
+    <style>a{ margin-right:30px }</style>
+
+    <div class="contenedorarriba__header"> 
+        <div class="topnav">
+           
+            <a class="navitem" href="#Fichas técnicas"><strong>Fichas técnicas</strong></a>
+            <a class="navitem" href="#Gráficos"><strong>Gráficos</strong></a>
+            <a class="navitem" href="#Sobre nosotros"><strong>Sobre nosotros</strong></a>
+            <a class="navitem" href="#Perfil "><strong>Perfil </strong></a>
+            
+        </div>
+
+
+
+    </div>
+
     
     <section class="linkbar">
-        <li><a href="/cards.html?type=en-linea" class="linkbar__link">Ver documentos en linea</a></li>
-        <li><a href="/cards.html?type=en-biblioteca" class="linkbar__link">Ver ubicados en bibiotecas</a></li>
+        <li><a href="/cards.html?type=en-linea" class="linkbar__link">Documentos en linea</a></li>
+        <li><a href="/cards.html?type=en-biblioteca" class="linkbar__link">Documentos en bibioteca</a></li>
     </section>
 
 
     <!--probando si funciona el checkbox -->
         <section class="listcontainer">
             <form class="formcontainer">
-                <a href="/cards.html?type=cardstatusOnline" class="listcontainer__title">Fichas</a>
+                <a href="/cards.html?type=cardstatusOnline" class="listcontainer__title">Fichas técnicas</a>
             </form>
-            <div class="line"></div>
 
             <form class="filters ">
-                <h2>Filtro</h2>
+                <h4 class="filtrar__por">Filtrar por</h4>
                 
-                <label for="cardstatus" class="cardForm__label">Estado del documento</label>
+                <label for="cardstatus" class="cardForm__labeldes">Estado del documento</label>
             
                 <select id="cardstatus" class="cardForm__inputfilter" name="cardstatus">
                     <option value="">Tipo</option>
@@ -40,7 +57,7 @@
                 
     <!-- <label for="pokecollection" class="cardForm__label">Colección</label>-->  
                   
-    <label for="year" class="cardForm__label">Decadas</label>
+    <label for="year" class="cardForm__labeldes">Decadas</label>
                
     <select id="year" class="cardForm__inputfilter" name="year">
         <option value="">Escoger Decada</option>
@@ -86,7 +103,7 @@
                     <option value="Vaupés">Vaupés</option>
                     <option value="Vichada">Vichada</option>
                 </select>
-
+                
                 <h2 for="order">Ordenar</h2>
     <!-- ordenar por año -->  
                

@@ -1,3 +1,6 @@
 .body {
-  justify-content: center;
-}/*# sourceMappingURL=graphics.css.map */
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+/*# sourceMappingURL=graphics.css.map */

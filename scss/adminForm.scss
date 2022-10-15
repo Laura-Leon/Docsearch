@@ -1,14 +1,71 @@
+
+.contenedorarriba__header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    max-height: 12vh;
+    padding: 20px 20px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+            background-color: #9790EA;
+          
+   
+  }
+  
+  .topnav {
+    display: flex;
+    width: 60rem;
+    margin-left: 60%;
+    a:hover {
+        background: #4F46B8;
+      }
+    
+    
+  }
+
+  .navitem{
+    color: #ffffff;
+    font-family: 'Quicksand', sans-serif;
+    
+      
+  }
+  
+  .contenedor__agregardocstitulo{
+    text-align: center;
+  }
+
+  .h1__agregardoctitulo{
+    color: #736BD1;
+    font-size: 22px;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: bolder;
+    
+    
+  }
+
+  .p__agregardocsubtitulo{
+    font-family: 'Quicksand', sans-serif;
+    font-size: 18px;
+  }
+
+
 .cardForm{
     display: flex;
-    margin: 0 auto;
     flex-direction: column;
     width: 60%;
-    
+    padding-top: 1%;
     margin: 0 auto;
-   flex-direction: column;
+    flex-direction: column;
+    
     &__btn{
-        margin-top: 15px; 
+        margin-top: 2%; 
         display: block; 
+        margin-left: 50%;
+
 
     }
     &__success{
@@ -29,15 +86,20 @@
     }
 
 }
+
+
 .cardForm__input{
-    color: #736BD1;
+    color: #444444;
+
 }
+
 
 .field,
 .cardForm{
     &__label{
         display: block;
-        margin-top: 10px;
+        margin-top: 3%;
+        
 
         &--checkbox{
             margin-top: 2px;
@@ -55,10 +117,8 @@
         outline: 0;
         box-shadow: none;
         border: 0 !important;
-       
-        background-image: none;
-
         box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+        padding: 1%;
 
     }
 
@@ -77,3 +137,17 @@
         
 }
 h2{ block-size: auto;}
+
+.productForm__label{
+    color: #736BD1; 
+    font-family: Quicksand;
+    font-size: 16px;
+    font-weight: bolder;
+    padding-top: 2%;
+
+}
+
+.imagen__menuhambur{
+    margin-right: 95%;
+    margin-top: 3%;
+}

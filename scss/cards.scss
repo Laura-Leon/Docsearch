@@ -1,3 +1,39 @@
+.contenedorarriba__header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    max-height: 12vh;
+    padding: 20px 20px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+            background-color: #9790EA;
+          
+   
+  }
+  
+  .topnav {
+    display: flex;
+    width: 60rem;
+    margin-left: 60%;
+    a:hover {
+        background: #4F46B8;
+      }
+    
+    
+  }
+
+  .navitem{
+    color: #ffffff;
+    font-family: 'Quicksand', sans-serif;
+    
+      
+  }
+
+
 .storeContainer{
     display: flex;
     flex-direction: row;
@@ -7,15 +43,10 @@
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-   
     width: 100%;
     font-family: Quicksand;
-    background-color: #F1E3EF;
-    margin-left: 20px;
     align-content: center;
     justify-content: center;
-    margin: 0 auto;
-    padding: 30px;
     align-items: center;
 }  
 .Prodcontainer{
@@ -34,11 +65,12 @@
     box-shadow: 0 0 2px 1px #736BD1; 
     transform: translateY(-10px);
 }
-.cardForm__label{
+.cardForm__labeldes{
        color: #736BD1; 
        font-family: Quicksand;
        font-weight: bolder;
        width: 30%;
+
     }
 .cardForm__inputfilter{
         color: #ffffff;
@@ -68,16 +100,17 @@
 
 .linkbar{
     display: flex;
-  
     flex-direction: row;
     justify-content: center;
     color: #736BD1;
     font-family: Quicksand;
     font-weight: bolder;
+    padding-left: 70%;
+    padding-top: 1%;
    
     li{
         display: inline-block;
-        width: 150px;
+        width: 170px;
     color: #736BD1;
 
     }
@@ -144,21 +177,13 @@ font-weight: bold;
 text-decoration: none;
     }
 }
-.line{
-    border-top: 1px solid #e6a6dc;
-  height: 2px;
-  padding: 20px;
-  margin: 20px;
- 
-}
-h2{
+
+.filtrar__por{
     color:#736BD1;
-    width: 20%;
-   
-    padding: 0;
-    margin-top: 0;
+    padding: 2%;
     font-family: Quicksand;
-    font-weight: bolder;
+    font-weight: bold;
+    white-space: nowrap;
 }
 
 .cartBtn{
@@ -252,7 +277,7 @@ outline: none;
 .filters{
     flex-direction: column;
 }
-.cardForm__label{
+.cardForm__labeldes{
     align-items: flex-start;
 }
 .cardForm__inputfilter{
@@ -266,3 +291,4 @@ display: flex;
 visibility: visible;
 }
 }
+

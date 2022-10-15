@@ -11,25 +11,36 @@
 
 </head>
 <body>
+    <STYLE>A {text-decoration: none;} </STYLE>
+    <style>a{ margin-right:30px }</style>
+
 
  <!--header start -->
- <header class="header">
-    <section class="header__discover">
-        
-    </section>
-   
-    <a class = "product" href="./cards.html" ><img class="header__imglogo" src="images/logo.PNG"></a>
-    <section class="header__information">
-       
-        <section class="btn">
-           <section class = "authButtons"></section>
-    <a class ="formBtn hidden showLoggedAdmin" href="/productForm.html" >Ir a forms</a>
+ 
 
-        </section>
-    </section>
-     <a href="/adminview.html" class= "adminview">Documentos nuevos<span></span></a>
-</header>
+    <div class="contenedorarriba__header"> 
+        <div class="topnav">
+           
+            <a class="navitem" href="#Fichas técnicas"><strong>Fichas técnicas</strong></a>
+            <a class="navitem" href="#Gráficos"><strong>Gráficos</strong></a>
+            <a class="navitem" href="#Sobre nosotros"><strong>Sobre nosotros</strong></a>
+            <a class="navitem" href="#Perfil "><strong>Perfil </strong></a>
+            
+        </div>
+
+
+
+    </div>
+
+
 <!--header finish -->
+
+<div class="contenedor__agregardocstitulo">
+    <img class="imagen__menuhambur" src="./images/menuhamburguesa.png" width="27" height="20">
+    <h1 class="h1__agregardoctitulo">Agrega un nuevo documento</h1>
+    <p class="p__agregardocsubtitulo">Apoya el acercamiento de contenido para todos agregando un documento Antropológico Colombiano escrito por ti o que te haya parecido interesante.</p>
+</div>
+
 
 <form class="cardForm">
     <h2 class="cardForm__loading hidden">Cargando...</h2>
@@ -42,19 +53,19 @@
     <input class = "cardForm__input" id= "author" name="author" type="text" placeholder="Escribe el nombre del autor">
 
     <label class="cardForm__label" for="year">Año</label>
-    <input class = "cardForm__input" id= "year" name="year" type="text" placeholder="Escribe el nombre">
+    <input class = "cardForm__input" id= "year" name="year" type="text" placeholder="Escribe el año del documento">
     
     <label class="cardForm__label" for="title">Título</label>
-    <input class = "cardForm__input" id= "title" name="title" type="text" placeholder="Escribe el nombre">
+    <input class = "cardForm__input" id= "title" name="title" type="text" placeholder="Escribe el título del documento">
 
     <label class="cardForm__label" for="source">Fuente</label>
-    <input class = "cardForm__input" id= "source" name="source" type="text" placeholder="Escribe el nombre">
+    <input class = "cardForm__input" id= "source" name="source" type="text" placeholder="Escribe la fuente del documento">
 
     <label class="cardForm__label" for="link">Enlace / link</label>
-    <input class = "cardForm__input" id= "link" name="link" type="text" placeholder="Escribe el nombre">
+    <input class = "cardForm__input" id= "link" name="link" type="text" placeholder="Pega el link o el enlace del documento">
 
-    <label class="cardForm__label" for="keyword">Palabras clave / Descriptor temático</label>
-    <input class = "cardForm__input" id= "keyword" name="keyword" type="text" placeholder="Escribe el nombre">
+    <label class="cardForm__label" for="keyword">Descriptor temático</label>
+    <input class = "cardForm__input" id= "keyword" name="keyword" type="text" placeholder="Escribe las palabras claves del documento">
 
 <!--option department -->
 <label for ="department"class = "cardForm__label">Departamento</label>
@@ -97,10 +108,10 @@
 </select>
     <!--inputs -->
     <label class="cardForm__label" for="lat">Latitud</label>
-    <input class = "cardForm__input" id= "lat" name="lat" type="text" placeholder="Escribe el nombre">
+    <input class = "cardForm__input" id= "lat" name="lat" type="text" placeholder="Escribe la latitud del departamento">
 
     <label class="cardForm__label" for="long">Longitud</label>
-    <input class = "cardForm__input" id= "long" name="long" type="text" placeholder="Escribe el nombre">
+    <input class = "cardForm__input" id= "long" name="long" type="text" placeholder="Escribe la longitud del departamento">
 
 <!--option cardstatus -->
     <label for ="cardstatus"class = "cardForm__label">Estado del documento</label>
@@ -113,7 +124,7 @@
 
 <!--imagen -->
 
-<label for="image" class="productForm__label">Image</label>
+<label for="image" class="productForm__label">Imagen</label>
 <div class="productForm__images"></div>
 <input accept=".jpg, .png, .webp, .jfif" id="image" class="productForm__input" name="image" type="file">
     <button class="cardForm__btn" type ="submit">Enviar</button>
