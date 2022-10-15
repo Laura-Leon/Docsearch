@@ -48,17 +48,19 @@
     align-content: center;
     justify-content: center;
     align-items: center;
+    padding-top: 2%;
 }  
 .Prodcontainer{
     border-radius: 15px;
     justify-content: center;
     align-items: center;
-    width: 200px;
+    width: 280px;
     display: block;
     text-decoration: none;
     margin:20px;
     //box-shadow: rgba(110, 51, 110, 0.2) 0px 7px 23px 0px;
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    white-space: inherit;
 
 }
 .Prodcontainer:hover{
@@ -70,21 +72,19 @@
        font-family: Quicksand;
        font-weight: bolder;
        width: 30%;
+    
 
     }
 .cardForm__inputfilter{
-        color: #ffffff;
+        color: #909090;
         font-family: Quicksand;
         margin-left: 10px;
         margin-right: 10px;
-      
-        outline: 0;
-        box-shadow: none;
-        border: 0 !important;
-        background: #736BD1;
-        background-image: none;
         height: 30px;
-        width: 50%;
+        width: 16%;
+        border-radius: 15px;
+        border: 2px solid #C9C7E1;
+        font-family: 'Quicksand', sans-serif;
     }
     select::-ms-expand{
         display: none;
@@ -150,13 +150,14 @@
     &__title{
     color: #736BD1;
     font-family: Quicksand;
-font-size: 36px;
-font-style: normal;
-font-weight: bold;
-line-height: 45px;
-letter-spacing: 0em;
-text-decoration: none;
-margin-left: 20px;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: bold;
+    line-height: 45px;
+    letter-spacing: 0em;
+    text-decoration: none;
+    margin-left: 20px;
+    margin-top: 2%;
 
 
     }
@@ -180,10 +181,10 @@ text-decoration: none;
 
 .filtrar__por{
     color:#736BD1;
-    padding: 2%;
     font-family: Quicksand;
     font-weight: bold;
     white-space: nowrap;
+    padding-left: 1%;
 }
 
 .cartBtn{

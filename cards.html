@@ -32,11 +32,6 @@
     </div>
 
     
-    <section class="linkbar">
-        <li><a href="/cards.html?type=en-linea" class="linkbar__link">Documentos en linea</a></li>
-        <li><a href="/cards.html?type=en-biblioteca" class="linkbar__link">Documentos en bibioteca</a></li>
-    </section>
-
 
     <!--probando si funciona el checkbox -->
         <section class="listcontainer">
@@ -47,20 +42,18 @@
             <form class="filters ">
                 <h4 class="filtrar__por">Filtrar por</h4>
                 
-                <label for="cardstatus" class="cardForm__labeldes">Estado del documento</label>
             
                 <select id="cardstatus" class="cardForm__inputfilter" name="cardstatus">
-                    <option value="">Tipo</option>
+                    <option value="">Tipo de estado del documento</option>
                     <option value="en-linea">En linea</option>
                     <option value="en-biblioteca">En biblioteca</option>
                 </select>
                 
     <!-- <label for="pokecollection" class="cardForm__label">Colección</label>-->  
                   
-    <label for="year" class="cardForm__labeldes">Decadas</label>
                
     <select id="year" class="cardForm__inputfilter" name="year">
-        <option value="">Escoger Decada</option>
+        <option value="">Año</option>
         <option value="0">Entre 1920 y 1940</option>
         <option value="1">Entre 1940 a 1960</option>
         <option value="2">Mayor a 1960</option>
@@ -69,7 +62,7 @@
             
                 <select id="department" class="cardForm__inputfilter" name="department">
                   
-                    <option value=" ">--seleccione un departamento--</option>
+                    <option value=" ">Departamento</option>
                     <option value="Amazonas">Amazonas</option>
                     <option value="Antioquia">Antioquia</option>
                     <option value="Arauca">Arauca</option>
@@ -104,7 +97,8 @@
                     <option value="Vichada">Vichada</option>
                 </select>
                 
-                <h2 for="order">Ordenar</h2>
+                <h4 class="filtrar__por">Ordenar por</h4>
+               
     <!-- ordenar por año -->  
                
                 <select id="order" class="cardForm__inputfilter" name="order">
