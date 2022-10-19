@@ -24,7 +24,7 @@ const handleCollectionResult = (querySnapshot) => {
         </div>
        
 
-        <button class= "card__cartBtn">Agregar a favoritos</button>
+        <button class= "card__profileBtn">Agregar a favoritos</button>
         <button class ="card__deleteBtn hidden showLoggedAdmin"><img class="card__img", src="images/delete.svg"alt=""></button>
    </div>
         `;
@@ -44,9 +44,9 @@ const handleCollectionResult = (querySnapshot) => {
                 });
         });
         //
-        const cartBtn = card.querySelector('.card__cartBtn');
-        cartBtn.addEventListener('click', function () {
-            addToMyCart({
+        const profileBtn = card.querySelector('.card__profileBtn');
+        profileBtn.addEventListener('click', function () {
+            addToMyProfile({
                 ...data,
                 id: doc.id,
             });

@@ -23,43 +23,51 @@ const firebaseConfig = {
     userAuthChanged(true);
     if(typeof checkProductFormAdmin !== 'undefined') checkProductFormAdmin();
   }
-  /*
+ 
   firebase.auth().onAuthStateChanged((user) => {
     if (user) {
       db.collection('users').doc(user.uid).get().then(function (doc) {
         if(!doc.data()) return;
         setLoggedUser(doc.data(), user.uid);
       });
-      getMyCart(user.uid);
+      getMyProfile(user.uid);
+     
     } else {
       loggedUser = null;
-      cart = [];
+      profile = [];
       userAuthChanged(false);
     }
   });
   
-  let cart = [];
-  const cartBtnNumber = document.querySelector('.cartBtn span');
-  const CART_COLLECTION = db.collection('cart');
+  let profile = [];
+  const profileBtnNumber = document.querySelector('.profileBtn span');
+  const PROFILE_COLLECTION = db.collection('profile');
   const ORDERS_COLLECTION = db.collection('orders');
+  const USERS_COLLECTION = db.collection('users');
+  let users = [];
+
+
+
   
-  const addToMyCart = (product) => {
-    cart.push(product);
-    CART_COLLECTION.doc(loggedUser.uid).set({
-      cart,
+  const addToMyProfile = (product) => {
+    profile.push(product);
+    PROFILE_COLLECTION.doc(loggedUser.uid).set({
+      profile,
     });
-    cartBtnNumber.innerText = cart.length;
+    profileBtnNumber.innerText = profile.length;
   };
   
-  let renderCart = null;
+  let renderProfile = null;
   
-  const getMyCart = (uid) => {
-    CART_COLLECTION.doc(uid).get().then(snapShot => {
+  const getMyProfile = (uid) => {
+    PROFILE_COLLECTION.doc(uid).get().then(snapShot => {
       const data = snapShot.data();
       if(!data) return;
-      if(cartBtnNumber) cartBtnNumber.innerText = data.cart.length;
-      cart = data.cart;
-      if(renderCart) renderCart();
+      if(profileBtnNumber) profileBtnNumber.innerText = data.profile.length;
+      profile = data.profile;
+      if(renderProfile) renderProfile();
     });
-  }
-  */
+  
+}
+
+ 

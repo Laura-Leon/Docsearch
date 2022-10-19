@@ -4,7 +4,6 @@ const cardFormLoading = document.querySelector('.cardForm__loading');
 const cardFormError = document.querySelector('.cardForm__error');
 
 
-
 cardForm.cardstatus.addEventListener('change', function () {
     console.log(cardForm.cardstatus.value);
 })
@@ -17,7 +16,7 @@ cardForm.cardstatus.addEventListener('change', function () {
 cardForm.addEventListener('submit', function (event) {
     event.preventDefault();
 
-    const card = {
+    const order = {
         author: cardForm.author.value,
         year: cardForm.year.value,
         //price: parseFloat(cardForm.price.value),
@@ -34,56 +33,56 @@ cardForm.addEventListener('submit', function (event) {
     };
 
 
-    if (!card.author) {
+    if (!order.author) {
         cardFormError.innerText = 'Necesitas ponerle nombre al autor de la obra';
         cardFormError.classList.remove('hidden');
         return;
     }
-    if (!card.year) {
+    if (!order.year) {
         cardFormError.innerText = 'Necesitas poner el año de publicaciòn de la obra';
         cardFormError.classList.remove('hidden');
         return;
     }
-    if (!card.title) {
+    if (!order.title) {
         cardFormError.innerText = 'Necesitas agregar un título a la obra';
         cardFormError.classList.remove('hidden');
         return;
     }
-    if (!card.source) {
+    if (!order.source) {
         cardFormError.innerText = 'Necesitas agregar la fuente, revista, universidad, o instituto de donde viene la obra a la obra';
         cardFormError.classList.remove('hidden');
         return;
-    } if (!card.link) {
+    } if (!order.link) {
         cardFormError.innerText = 'Necesitas agregar un link del lugar donde está alojada la obra (base de datos, pagina web, etc...';
         cardFormError.classList.remove('hidden');
         return;
     }
-    if (!card.keyword) {
+    if (!order.keyword) {
         cardFormError.innerText = 'Necesitas agregar al menos un keyword';
         cardFormError.classList.remove('hidden');
         return;
     }
-    if (!card.department) {
+    if (!order.department) {
         cardFormError.innerText = 'Necesitas agregar el departamento del que habla el texto o un departamento aproximado';
         cardFormError.classList.remove('hidden');
         return;
     }
-    if (!card.lat) {
+    if (!order.lat) {
         cardFormError.innerText = 'Necesitas agregar la latitud en grados decimales del departamento seleccionado';
         cardFormError.classList.remove('hidden');
         return;
     }
-    if (!card.long) {
+    if (!order.long) {
         cardFormError.innerText = 'Necesitas agregar la longuitud en grados decimales del departamento seleccionado';
         cardFormError.classList.remove('hidden');
         return;
     }
-    if (!card.cardstatus) {
+    if (!order.cardstatus) {
         cardFormError.innerText = 'Necesitas agregar en que estado se encuentra el documento, si está disponible en linea o en una biblioteca física';
         cardFormError.classList.remove('hidden');
         return;
     }
-    console.log(card);
+    console.log(order);
 
   
 
@@ -99,18 +98,20 @@ cardForm.addEventListener('submit', function (event) {
     }
 
     //espera a subir la información al firestore
-    db.collection("cards").add(card)
-        .then(function (docRef) {
-            cardFormLoading.classList.add('hidden');
-            cardFormSuccess.classList.remove('hidden');
-        cardForm.reset()
-    
-        })
-        .catch(genericCatch);
+    ORDERS_COLLECTION.add(order)
+    .then(function (docRef) {
+      console.log(docRef.id);
+
+      PROFILE_COLLECTION.doc(loggedUser.uid).set({
+        profile: [],
+      });
+
+      location.href = '/cards.html';
+    });
+
+  console.log(order);
+
+
 });
-const checkcardFormAdmin = () => {
-    if (!loggedUser || !loggedUser.admin) {
-        location.href = '/cards.html';
-    }
-}
+
 console.log(loggedUser);
