@@ -14,13 +14,15 @@ const handleCollectionResult = (querySnapshot) => {
              <h1 class=" =card__title">
         ${data.title}
          </h1>
-        <h3 class="card__price">${data.author}</h3>
-        <h3 class="card__price">${data.year}</h3>
-        <a href="${data.link}" target="_blank" >Click para ir a la página</a>
-        <h3 class="card__price">${data.source}</h3>
-        <h3 class="card__price">${data.keyword}</h3>
-        <h3 class="card__price">${data.department}</h3>
-        <h3 class="card__price">${data.cardstatus}</h3>
+
+        <h3 class="card__price"><b>Autor:</b> ${data.author}</h3>
+        <h3 class="card__price"><b>Año:</b> ${data.year}</h3>
+       
+        <h3 class="card__price"><b>Fuente:</b> ${data.source}</h3>
+        <h3 class="card__price"><b>Palabras clave:</b> ${data.keyword}</h3>
+        <h3 class="card__price"> <b>Departamento:</b> ${data.department}</h3>
+        <h3 class="card__price"><b>Estado:</b> ${data.cardstatus}</h3>
+        <a href="${data.link}" target="_blank" ><b>Click para ver info completa</b></a>
         </div>
        
 
