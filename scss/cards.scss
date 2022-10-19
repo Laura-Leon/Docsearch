@@ -18,7 +18,7 @@
   .topnav {
     display: flex;
     width: 60rem;
-    margin-left: 60%;
+    margin-left: 50%;
     a:hover {
         background: #4F46B8;
       }
@@ -32,6 +32,11 @@
     
       
   }
+
+  .icon-cart{
+    width: 4%;
+    height: 4%;
+}
 
 
 .storeContainer{
@@ -292,4 +297,5 @@ display: flex;
 visibility: visible;
 }
 }
+
 

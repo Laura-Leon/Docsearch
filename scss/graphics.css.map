@@ -1,1 +1,9 @@
-{"version":3,"sources":["graphics.scss","graphics.css"],"names":[],"mappings":"AAAA;EACA,uBAAA;ACCA","file":"graphics.css"}
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,KAAK,CAAA;EACL,eAAe,EAAE,MAAM;CACtB",
+    "sources": [
+        "graphics.scss"
+    ],
+    "names": [],
+    "file": "graphics.css"
+}
