@@ -1,6 +1,17 @@
 .body {
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
 }
-/*# sourceMappingURL=graphics.css.map */
+
+.graphicContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.tableauPlaceholder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  margin-left: 25%;
+}/*# sourceMappingURL=graphics.css.map */
