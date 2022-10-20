@@ -4,8 +4,6 @@ body {
 }
 
 .contenedor {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   padding-top: 20%;
   padding-left: 16%;
@@ -14,7 +12,7 @@ body {
 .h1__titulo {
   color: white;
   font-size: 85px;
-  font-family: 'Quicksand', sans-serif;
+  font-family: "Quicksand", sans-serif;
   font-weight: bolder;
   margin-bottom: 2rem;
   text-align: center;
@@ -22,10 +20,15 @@ body {
 
 .p__subtitulo {
   color: white;
+<<<<<<< HEAD
   font-size: 30px;
   font-family: 'Quicksand', sans-serif;
+=======
+  font-size: 50px;
+  font-family: "Quicksand", sans-serif;
+>>>>>>> 4c76ad0c9792975d364d9c9956d42ee4637e8a3d
   font-weight: 500;
-  background: #4f46b873;
+  background: rgba(79, 70, 184, 0.4509803922);
   margin-bottom: 0.2rem;
   width: -webkit-fit-content;
   width: -moz-fit-content;
@@ -36,12 +39,13 @@ body {
 .p__header {
   color: #736BD1;
   font-size: 22px;
-  font-family: 'Quicksand', sans-serif;
+  font-family: "Quicksand", sans-serif;
   font-weight: bolder;
   margin-bottom: 6rem;
   margin-top: 23%;
 }
 
+<<<<<<< HEAD
 .boton_personalizado {
   text-decoration: none;
   padding: 15px;
@@ -130,3 +134,53 @@ body {
   }
 }
 /*# sourceMappingURL=styles.css.map */
+=======
+.login {
+  width: auto;
+}
+
+.text__box {
+  border-radius: 25px;
+  border: 2px solid #736BD1;
+  padding-top: 5%;
+  padding-bottom: 2%;
+  width: 300px;
+  font-family: "Quicksand", sans-serif;
+}
+
+.descripcion__iniciar {
+  font-family: "Quicksand", sans-serif;
+  font-size: 15px;
+  margin-top: 8%;
+  color: #736BD1;
+  text-decoration: none;
+}
+
+.boton__iniciarsesion {
+  font-family: "Quicksand", sans-serif;
+  font-size: 15px;
+  width: 30%;
+  margin-top: 5%;
+}
+
+::-moz-placeholder {
+  color: rgba(116, 107, 209, 0.4039215686);
+  font-size: 15px;
+  padding-left: 5%;
+  margin-top: 20%;
+}
+
+:-ms-input-placeholder {
+  color: rgba(116, 107, 209, 0.4039215686);
+  font-size: 15px;
+  padding-left: 5%;
+  margin-top: 20%;
+}
+
+::placeholder {
+  color: rgba(116, 107, 209, 0.4039215686);
+  font-size: 15px;
+  padding-left: 5%;
+  margin-top: 20%;
+}/*# sourceMappingURL=styles.css.map */
+>>>>>>> 4c76ad0c9792975d364d9c9956d42ee4637e8a3d

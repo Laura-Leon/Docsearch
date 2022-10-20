@@ -6,11 +6,9 @@
   height: 100vh;
   padding: 20px;
   display: none;
-  -webkit-transition: opacity .5s ease;
-  transition: opacity .5s ease;
+  transition: opacity 0.5s ease;
   opacity: 0;
 }
-
 .modal__backdrop {
   position: absolute;
   left: 0;
@@ -19,22 +17,16 @@
   height: 100%;
   background-color: rgba(0, 0, 0, 0.5);
 }
-
 .modal__content {
   padding: 20px;
   background-color: white;
   margin: 10% auto;
   width: 100%;
   max-width: 400px;
-  -webkit-transition: -webkit-transform .5s ease;
-  transition: -webkit-transform .5s ease;
-  transition: transform .5s ease;
-  transition: transform .5s ease, -webkit-transform .5s ease;
-  -webkit-transform: translate(0px, -500px);
-          transform: translate(0px, -500px);
+  transition: transform 0.5s ease;
+  transform: translate(0px, -500px);
   position: relative;
 }
-
 .modal__close {
   position: absolute;
   top: 5px;
@@ -42,5 +34,4 @@
   width: 30px;
   height: 20px;
   padding-bottom: 20px;
-}
-/*# sourceMappingURL=modal.css.map */
+}/*# sourceMappingURL=modal.css.map */
