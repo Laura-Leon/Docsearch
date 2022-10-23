@@ -4,11 +4,12 @@
   top: 0px;
   width: 100vw;
   height: 100vh;
-  padding: 20px;
   display: none;
-  transition: opacity 0.5s ease;
+  -webkit-transition: opacity .5s ease;
+  transition: opacity .5s ease;
   opacity: 0;
 }
+
 .modal__backdrop {
   position: absolute;
   left: 0;
@@ -17,21 +18,28 @@
   height: 100%;
   background-color: rgba(0, 0, 0, 0.5);
 }
+
 .modal__content {
   padding: 20px;
-  background-color: white;
-  margin: 10% auto;
+  background-image: url("/images/inicio.png");
+  background-size: cover;
   width: 100%;
-  max-width: 400px;
-  transition: transform 0.5s ease;
-  transform: translate(0px, -500px);
+  height: 230%;
+  -webkit-transition: -webkit-transform .5s ease;
+  transition: -webkit-transform .5s ease;
+  transition: transform .5s ease;
+  transition: transform .5s ease, -webkit-transform .5s ease;
+  -webkit-transform: translate(0px, -500px);
+          transform: translate(0px, -500px);
   position: relative;
 }
+
 .modal__close {
   position: absolute;
   top: 5px;
-  right: 5px;
-  width: 30px;
+  right: 25px;
+  width: 50px;
   height: 20px;
-  padding-bottom: 20px;
-}/*# sourceMappingURL=modal.css.map */
+  background-color: white;
+}
+/*# sourceMappingURL=modal.css.map */

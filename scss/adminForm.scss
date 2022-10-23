@@ -1,4 +1,5 @@
 
+
 .contenedorarriba__header {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -151,7 +152,36 @@ h2{ block-size: auto;}
 
 }
 
-.imagen__menuhambur{
-    margin-right: 95%;
-    margin-top: 3%;
+
+.card__login{
+    border-radius: 15px;
+    background-color: white;
+    display: block;
+    margin-left: 35%;
+    margin-top: 17%;
+    width: fit-content;
+    padding-left: 2%;
+    padding-right: 17%;
+    padding-top: 2%;
+    padding-bottom: 4%;
+}
+
+.productForm__input{
+    width: 245%;
+    border-radius: 30px;
+    border: 1px solid #736BD1;
+}
+
+.authform__register{
+    margin-left: 82%;
+    
+}
+
+.authform__submit{
+    margin-left: 82%;
+}
+
+.authform__login{
+    margin-left: 82%;
+    
 }

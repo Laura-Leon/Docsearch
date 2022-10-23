@@ -14,12 +14,14 @@
     box-sizing: border-box;
 }
 h1{
-    font-family: Quicksand;   
+    font-family: Quicksand;  
+    color: #463f94; 
+       font-weight: bolder; 
 }
 
 h3{
     font-family: Quicksand;
-    color: #721B65;  
+    color: #7870bb;  
 }
 p{
     font-family: Quicksand; 
@@ -186,6 +188,9 @@ body {
         transition: .6s;
         background: none;
         overflow: hidden;
+        font-size: 11px;
+        margin-left: 25%;
+        margin-top: 2%;
         
        
       

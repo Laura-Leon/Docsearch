@@ -3,30 +3,38 @@ authModal.classList.add('modal');
 authModal.innerHTML = `
 <div class="modal__backdrop"></div>
     <article class="modal__content">
-        <button class="modal__close">x</button>
+        <button class="modal__close">Cerrar</button>
         <form class="authform">
-            <label class="authform__regfield productForm__label">
-                Nombre
-                <input class="productForm__input" type="text" name="firstname">
-            </label>
-            <label class="authform__regfield productForm__label">
-            Apellido
-            <input class="productForm__input" type="text" name="lastname">
-        </label>
-            <label class="productForm__label">
-                Email
-                <input class="productForm__input" type="email" name="email">
-            </label>
-            <label class="productForm__label">
-                Password
-                <input class="productForm__input" type="password" name="password">
-            </label>
+          <div class="card__login">
+          <div class="labels__login">
+          <label class="authform__regfield productForm__label">
+          Nombre
+          <br>
+          <input class="productForm__input" type="text" name="firstname"><br><br>
+      </label>
+      <label class="authform__regfield productForm__label">
+      Apellido
+      <br>
+      <input class="productForm__input" type="text" name="lastname"><br><br>
+  </label>
+      <label class="productForm__label">
+          Email
+          <br>
+          <input class="productForm__input" type="email" name="email"><br><br>
+      </label>
+      <label class="productForm__label">
+          Password
+          <br>
+          <input class="productForm__input" type="password" name="password"><br><br>
+      </label>
+          </div>
 
-            <p class="productForm__error"></p>
 
-            <button type ="button" class=" authform__register">Ir a registro</button>
-            <button type ="button" class="authform__login">Ir a ingresar</button>
-            <button type="submit">Enviar</button>
+
+      <button type ="button" class=" authform__register">Ir a registro</button>
+      <button type ="button" class="authform__login">Ir a ingresar</button>
+      <br><button type="submit" class="authform__submit">Enviar</button>
+          </div>
         </form>
     </article>
     `;
@@ -108,7 +116,7 @@ authModal.innerHTML = `
 
     authButtons.forEach((element)=>{
       element.innerHTML = `
-      <button class="authButtons__login hideLoggedIn">Login / Register</button>
+      <button class="authButtons__login hideLoggedIn"> Iniciar / Registrarse</button>
       <button class="authButtons__logout hidden showLoggedIn">Logout</button>
     `;
 

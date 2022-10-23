@@ -22,7 +22,8 @@
     }
     &__info{
         padding: 10px;
-        margin-right: 5%;
+        text-decoration: none;
+        
     }
     &__title{
         margin-top: 5px;
@@ -137,3 +138,4 @@ margin: 5%;
         flex-direction: column;
     }
 }
+
