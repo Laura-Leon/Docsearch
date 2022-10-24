@@ -1,0 +1,106 @@
+.flexbox-container {
+  display: -ms-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.flexbox-container > div {
+  width: 100%;
+  padding: 4%;
+}
+
+.flexbox-container > div:first-child {
+  margin-right: 50px;
+}
+
+h4 {
+  font-family: Quicksand;
+  color: #736BD1;
+}
+
+.descripcion__sobre {
+  font-size: 18px;
+}
+
+.imagen__descripcion {
+  width: 90%;
+  height: 93%;
+}
+
+.contenedor__abajosobre {
+  background-color: #F6F9FE;
+}
+
+.titulo__2 {
+  margin-left: 40%;
+  padding-top: 3%;
+}
+
+.titulo__beneficios {
+  margin-left: 43%;
+  padding-top: 1%;
+}
+
+.imagen__diana {
+  width: 36%;
+  height: 65%;
+  margin-left: 50%;
+}
+
+.nombre__titulo1 {
+  margin-left: 58%;
+}
+
+.titulo__diana {
+  font-size: 15px;
+  margin-left: 42%;
+  color: #383b3b;
+}
+
+.imagen__laura {
+  width: 36%;
+  height: 65%;
+  margin-left: 8%;
+}
+
+.nombre__titulo2 {
+  margin-left: 17%;
+}
+
+.titulo__laura {
+  font-size: 15px;
+  margin-left: 1%;
+  color: #383b3b;
+}
+
+.imagen__beneficio1 {
+  width: 46%;
+  height: 57%;
+  margin-left: 48%;
+}
+
+.imagen__beneficio2 {
+  width: 46%;
+  height: 57%;
+  margin-left: 19%;
+}
+
+.imagen__beneficio3 {
+  width: 46%;
+  height: 57%;
+  margin-left: 3%;
+}
+
+.nombre__titulobene1 {
+  margin-left: 59%;
+}
+
+.nombre__titulobene2 {
+  margin-left: 33%;
+}
+
+.nombre__titulobene3 {
+  margin-left: 14%;
+}
+/*# sourceMappingURL=sobrenosotros.css.map */
