@@ -9,27 +9,40 @@
     <title>Document</title>
 </head>
 <body>
-    <STYLE>A {text-decoration: none;} </STYLE>
-    <style>a{ margin-right:30px }</style>
+    
+    <STYLE>
+        A {
+            text-decoration: none;
+        }
+    </STYLE>
+    <style>
+        a {
+            margin-right: 30px
+        }
+    </style>
 
     <div class="contenedorarriba__header"> 
+
+        <img class="imagen__logo" src="/images/Logo.png" alt="">
+       
         <div class="topnav">
+
+            
            
             <a class="navitem" href="./cards.html"><strong>Fichas técnicas</strong></a>
             <a class="navitem" href="./graphics.html"><strong>Gráficos</strong></a>
-            <a class="navitem" href="#Sobre nosotros"><strong>Sobre nosotros</strong></a>
+            <a class="navitem" href="./sobrenosotros.html"><strong>Sobre nosotros</strong></a>
+
                <section class = "authButtons"></section>
-        <img class="icon-cart", src="./images/Iconoperfil.png"alt=""><span></span></a>
+
         <a class ="formBtn hidden showLoggedAdmin" href="./adminForm.html" >Ir a forms</a>
-        <a class ="formBtn  showLoggedAdmin" href="./adminView.html" >Ir a docs</a>
-        <a class ="formBtn " href="./profile.html" >Ir a perfil</a>
+       
+        
+
 
         </div>
 
-
-
-    </div>
-
+        <a href="./profile.html"> <img src="./images/Iconoperfil.png" width="30" height="30"></a>
 
 
     </div>
@@ -41,6 +54,30 @@
 
     <div class='tableauPlaceholder' id='viz1666203140826' ><noscript><a href='#'><img alt='Documentos etnográficos distribuidos en el país ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Pr&#47;Pruebadegraficas&#47;Dashboard1&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='Pruebadegraficas&#47;Dashboard1' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Pr&#47;Pruebadegraficas&#47;Dashboard1&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='es-ES' /><param name='filter' value='publish=yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1666203140826');                    var vizElement = divElement.getElementsByTagName('object')[0];                    if ( divElement.offsetWidth > 800 ) { vizElement.style.width='800px';vizElement.style.height='827px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='800px';vizElement.style.height='827px';} else { vizElement.style.width='100%';vizElement.style.height='927px';}                     var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
     
+
+
+    
+    <div class="contenedor__footer">
+
+        <img class="imagen__logo" src="/images/Logo.png" alt="">
+
+        <div class="footer__basico">
+
+            <footer>
+
+                <ul class="list-inline">
+                    <li class="list-inline-item"><a href="./cards.html">Fichas técnicas</a></li>
+                    <li class="list-inline-item"><a href="./graphics.html">Gráficos</a></li>
+                    <li class="list-inline-item"><a href="#">Sobre nosotros</a></li>
+                    <li class="list-inline-item"><a href="./profile.html">Perfil</a></li>
+
+                </ul>
+
+
+
+
+            </footer>
+        </div>
     <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-firestore.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-storage.js"></script>

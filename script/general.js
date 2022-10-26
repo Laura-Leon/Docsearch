@@ -29,8 +29,6 @@ firebase.auth().onAuthStateChanged((user) => {
     db.collection('users').doc(user.uid).get().then(function (doc) {
       if (!doc.data()) return;
       setLoggedUser(doc.data(), user.uid);
-    
-    
     });
     getMyProfile(user.uid);
     setUser(user);

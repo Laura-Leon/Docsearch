@@ -3,10 +3,8 @@ const adminSuccess = document.querySelector('.admin__success');
 const adminLoading = document.querySelector('.admin__loading');
 const adminError = document.querySelector('.admin__error');
 
-
-
-
 const handleAdminCollectionResults = (querySnapshot) => {
+    
     
     listview.innerHTML = '';
     querySnapshot.forEach((doc) => {
@@ -28,35 +26,35 @@ const handleAdminCollectionResults = (querySnapshot) => {
     <h3 class="card__price">${data.cardstatus}</h3>
     </div>
     
-    <button class ="profile__deleteBtn"><img class="card__img", src="images/delete.svg"alt=""></button>
-    <button class ="profile__addBtn">Agregar ficha</button>
+    <button class ="admin__deleteBtn"><img class="card__img", src="images/delete.svg"alt=""></button>
+    <button class ="admin__addBtn">Agregar ficha</button>
 
   <div class="line"></div>
        
-
    </div>
         `;
 
         listview.appendChild(customer);
-        //deletebutton
-        const deleteBtn = customer.querySelector('.profile__deleteBtn');
-        deleteBtn.addEventListener('click', function () {
-            //delete element
-            db.collection('orders').doc(doc.id).delete()
-                .then(() => {
-                    console.log("Document successfully deleted!");
+          //deletebutton
+  const deleteBtn = customer.querySelector('.admin__deleteBtn');
+  deleteBtn.addEventListener('click', function (event) {
+    event.preventDefault();
+        
+      //delete element
+      db.collection('orders').doc(doc.id).delete()
+          .then(() => {
+              console.log("Document successfully deleted!");
 
-                }).catch((error) => {
-                    console.error("Error removing document: ", error);
-                });
-        });
-
-        //agregar boton
+          }).catch((error) => {
+              console.error("Error removing document: ", error);
+          });
+  });
+      
 
         //espera a subir la información al firestore
    
 
-        const addBtn = customer.querySelector('.profile__addBtn');
+        const addBtn = customer.querySelector('.admin__addBtn');
 
         addBtn.addEventListener('click', function (event) {
             event.preventDefault();
@@ -73,7 +71,6 @@ const handleAdminCollectionResults = (querySnapshot) => {
                 lat: data.lat,
                 long: data.long,
                 cardstatus: data.cardstatus,
-          
         
             };
         
@@ -127,9 +124,6 @@ const handleAdminCollectionResults = (querySnapshot) => {
         adminError.classList.remove('hidden');
         return;
     }
-        
-            console.log(card);
-        
         
             adminLoading.classList.remove('hidden');
             adminError.classList.add('hidden');

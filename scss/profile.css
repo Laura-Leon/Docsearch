@@ -66,6 +66,25 @@
 .informacion__perfil {
   padding: 10px;
   text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  flex-direction: column;
+}
+
+.Profcontainer {
+  border-radius: 15px;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  width: 280px;
+  height: 96%;
+  display: block;
+  text-decoration: none;
+  margin: 20px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  white-space: inherit;
 }
 
 .titulo__perfil {
@@ -73,5 +92,17 @@
   color: #463f94;
   font-weight: bolder;
   font-size: large;
-  margin-left: 23%;
+}
+
+.profile__title {
+  font-size: 18px;
+  font-family: Quicksand;
+  color: #0f0d23;
+}
+
+.profile__price {
+  font-size: 13px;
+  margin: 0 0 40px;
+  font-family: Quicksand;
+  color: #332f62;
 }/*# sourceMappingURL=profile.css.map */

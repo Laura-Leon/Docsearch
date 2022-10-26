@@ -118,6 +118,7 @@ authModal.innerHTML = `
       element.innerHTML = `
       <button class="authButtons__login hideLoggedIn"> Iniciar / Registrarse</button>
       <button class="authButtons__logout hidden showLoggedIn">Logout</button>
+      
     `;
 
     

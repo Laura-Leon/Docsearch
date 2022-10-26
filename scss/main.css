@@ -340,7 +340,7 @@ h2 {
 
 .Prodcontainer:hover {
   box-shadow: 0 0 2px 1px #736BD1;
-  transform: translateY(-10px);
+  transform: translateY(-5px);
 }
 
 .cardForm__labeldes {
