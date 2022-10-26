@@ -373,7 +373,7 @@ h2 {
   display: -ms-flexbox;
   display: flex;
   width: 70rem;
-  margin-left: 55%;
+  margin-left: 37%;
 }
 
 .topnav a:hover {
@@ -741,10 +741,10 @@ select {
 }
 
 .imagen__logo {
-  padding-top: 2%;
-  height: 8%;
-  width: 17%;
-  margin-left: 5%;
+  padding-top: 1%;
+  height: 6%;
+  width: 13%;
+  margin-left: 3%;
 }
 
 .footer__basico {
