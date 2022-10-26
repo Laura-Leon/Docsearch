@@ -65,29 +65,33 @@ filters.addEventListener('change', function () {
         cardsCollection = cardsCollection.where('cardstatus', '==', filters.cardstatus.value);
     }
 
-    const cardstatuss = [];
+    const status = [];
 
-    if (cardstatuss.length > 0) {
-        cardsCollection = cardsCollection.where('cardstatus', 'in', cardstatuss);
+    if (status.length > 0) {
+        
+        cardsCollection = cardsCollection.where('cardstatus', 'in', status);
+        console.log(status);
     }
 
 
     if (filters.year.value) {
         switch (filters.year.value) {
             case '0':
-                cardsCollection = cardsCollection.where('year', '<', 1940);
+                cardsCollection = cardsCollection.where('year', '<', 1960);
                 break;
             case '1':
-                cardsCollection = cardsCollection.where('year', '>=', 1940);
-                cardsCollection = cardsCollection.where('year', '<', 1960);
+                cardsCollection = cardsCollection.where('year', '>=', 1960);
+                cardsCollection = cardsCollection.where('year', '<', 1980);
 
                 break;
             case '2':
-                cardsCollection = cardsCollection.where('year', '>=', 1960);
+                cardsCollection = cardsCollection.where('year', '>=', 1980);
                 break;
         }
 
     }
+
+
 
     if (filters.department.value) {
         cardsCollection = cardsCollection.where('department', '==', filters.department.value);
@@ -96,30 +100,32 @@ filters.addEventListener('change', function () {
 
     if (filters.order.value) {
         switch (filters.order.value) {
-            case 'price_asc':
-                cardsCollection = cardsCollection.orderBy('price', 'asc');
+            case 'year_asc':
+                cardsCollection = cardsCollection.orderBy('year', 'asc');
                 break;
-            case 'price_desc':
-                cardsCollection = cardsCollection.orderBy('price', 'desc');
+            case 'year_desc':
+                cardsCollection = cardsCollection.orderBy('year', 'desc');
                 break;
             case 'Alpha':
-                if (filters.price.value) {
-                    cardsCollection = cardsCollection.orderBy('price', 'asc');
+                if (filters.year.value) {
+                    cardsCollection = cardsCollection.orderBy('year', 'asc');
                 }
-                cardsCollection = cardsCollection.orderBy('name', 'asc');
+                cardsCollection = cardsCollection.orderBy('title', 'asc');
                 break;
         }
     }
+
     cardsCollection.get().then(handleCollectionResult);
 });
 
 
 let cardsCollection = db.collection('cards')
 const params = new URLSearchParams(location.search);
+if (params.get('cardstatus')) {
+    cardsCollection = cardsCollection.where('cardstatus', '==', params.get('cardstatus'));
+}
 if (params.get('department')) {
     cardsCollection = cardsCollection.where('department', '==', params.get('department'));
 }
-if (params.get('pokecollection')) {
-    cardsCollection = cardsCollection.where('pokecollection', '==', params.get('pokecollection'));
-}
+
 cardsCollection.get().then(handleCollectionResult);

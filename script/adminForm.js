@@ -19,7 +19,7 @@ cardForm.addEventListener('submit', function (event) {
 
     const card = {
         author: cardForm.author.value,
-        year: cardForm.year.value,
+        year: parseFloat(cardForm.year.value),
         //price: parseFloat(cardForm.price.value),
         title: cardForm.title.value,
         source: cardForm.source.value,

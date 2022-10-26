@@ -1,25 +1,18 @@
+const uslist = document.querySelector('.userlist');
 
-const userList = document.querySelector('.userList');
+let userCollection = db.collection('users')
 
-// create element & render cafe
-function renderUser(doc){
-    let li = document.createElement('li');
-    let name = document.createElement('span');
-    let city = document.createElement('span');
-
-    li.setAttribute('data-id', doc.id);
-    name.textContent = doc.data().name;
-    city.textContent = doc.data().city;
-
-    li.appendChild(name);
-    li.appendChild(city);
-
-    userList.appendChild(li);
+const setUser = (user) => {
+  if (user) {
+    db.collection('users').doc(user.uid).get().then(doc => {
+      const data = doc.data();
+      const html = `
+      <h3 class="card__price"><b>Nombre:</b> ${data.firstname} ${data.lastname}</h3>  
+      `; 
+      uslist.innerHTML = html;   
+    })
+  }else{
+    uslist.innerHTML = '';
+  }
 }
 
-// getting data
-db.collection('users').get().then(snapshot => {
-    snapshot.docs.forEach(doc => {
-        renderUser(doc);
-    });
-});

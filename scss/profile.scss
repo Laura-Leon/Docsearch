@@ -50,7 +50,7 @@
     justify-content: center;
     align-items: center;
     width: 400px;
-    height: 550px;
+    height: auto;
     text-decoration: none;
     margin:20px;
     //box-shadow: rgba(110, 51, 110, 0.2) 0px 7px 23px 0px;
@@ -60,12 +60,12 @@
     margin-top: 3%;
     
 }
-
+/*
 .contenedores__perfil:hover{
     box-shadow: 0 0 2px 1px #736BD1; 
     transform: translateY(-10px);
 }
-
+*/
 
 .informacion__perfil {
     padding: 10px;

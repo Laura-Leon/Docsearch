@@ -18,7 +18,7 @@ cardForm.addEventListener('submit', function (event) {
 
     const order = {
         author: cardForm.author.value,
-        year: cardForm.year.value,
+        year: parseFloat(cardForm.year.value),
         //price: parseFloat(cardForm.price.value),
         title: cardForm.title.value,
         source: cardForm.source.value,
@@ -106,7 +106,7 @@ cardForm.addEventListener('submit', function (event) {
         profile: [],
       });
 
-      location.href = '/cards.html';
+      location.href = '/profile.html';
     });
 
   console.log(order);
