@@ -1,17 +1,26 @@
 .contenedorarriba__header {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   max-height: 12vh;
   padding: 20px 20px;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
   background-color: #9790EA;
 }
 
 .topnav {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   width: 70rem;
   margin-left: 37%;
 }
+
 .topnav a:hover {
   background: #4F46B8;
   border-radius: 15px;
@@ -19,7 +28,7 @@
 
 .navitem {
   color: #ffffff;
-  font-family: "Quicksand", sans-serif;
+  font-family: 'Quicksand', sans-serif;
 }
 
 .icon-cart {
@@ -28,37 +37,59 @@
 }
 
 .storeContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
 }
 
 .filters {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
   width: 100%;
   font-family: Quicksand;
-  align-content: center;
-  justify-content: center;
-  align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding-top: 2%;
 }
 
 .Prodcontainer {
   border-radius: 15px;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 280px;
   height: 96%;
   display: block;
   text-decoration: none;
   margin: 20px;
-  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  -webkit-box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+          box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
   white-space: inherit;
 }
 
 .Prodcontainer:hover {
   box-shadow: 0 0 2px 1px #736BD1;
   transform: translateY(-5px);
+  -webkit-box-shadow: 0 0 2px 1px #736BD1;
+          box-shadow: 0 0 2px 1px #736BD1;
+  -webkit-transform: translateY(-10px);
+          transform: translateY(-10px);
 }
 
 .cardForm__labeldes {
@@ -77,7 +108,7 @@
   width: 16%;
   border-radius: 15px;
   border: 2px solid #C9C7E1;
-  font-family: "Quicksand", sans-serif;
+  font-family: 'Quicksand', sans-serif;
 }
 
 select::-ms-expand {
@@ -91,20 +122,29 @@ select {
 }
 
 .linkbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
-  justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   color: #736BD1;
   font-family: Quicksand;
   font-weight: bolder;
   padding-left: 70%;
   padding-top: 1%;
 }
+
 .linkbar li {
   display: inline-block;
   width: 170px;
   color: #736BD1;
 }
+
 .linkbar li a {
   display: inline-block;
   text-decoration: none;
@@ -112,24 +152,34 @@ select {
   text-decoration: none;
   color: #736BD1;
 }
+
 .linkbar__link::after {
-  content: "";
+  content: '';
   display: block;
   width: 0;
   height: 2px;
-  background: rgb(71, 14, 14);
-  transition: width 0.3s;
+  background: #470e0e;
+  -webkit-transition: width .3s;
+  transition: width .3s;
 }
+
 .linkbar__link:hover::after {
   width: 100%;
-  transition: width 0.3s;
+  -webkit-transition: width .3s;
+  transition: width .3s;
 }
 
 .listcontainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   margin: 0 auto;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
+
 .listcontainer__title {
   color: #736BD1;
   font-family: Quicksand;
@@ -144,14 +194,22 @@ select {
 }
 
 .formcontainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
-  justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .cartBtn {
   margin: 10px;
 }
+
 .cartBtn span {
   color: #736BD1;
   font-family: Quicksand;
@@ -176,17 +234,22 @@ select {
 }
 
 .formBtn {
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin: 3px;
   font-family: Quicksand;
   color: #736BD1;
   width: 150px;
   border-radius: 30px;
   border: 2px solid #736BD1;
-  transition: 0.6s;
+  -webkit-transition: .6s;
+  transition: .6s;
   background: none;
   overflow: hidden;
   text-decoration: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   padding-left: 30px;
   font-size: 16px;
@@ -197,7 +260,7 @@ select {
 }
 
 .formBtn::after {
-  content: "";
+  content: '';
   display: block;
   position: absolute;
   background: rgba(255, 255, 255, 0.2);
@@ -206,15 +269,18 @@ select {
   left: 30px;
   top: 0;
   opacity: 0;
-  filter: blur(30px);
-  transform: translate(-100px) scaleX(-15deg);
+  -webkit-filter: blur(30px);
+          filter: blur(30px);
+  -webkit-transform: translate(-100px) scaleX(-15deg);
+          transform: translate(-100px) scaleX(-15deg);
 }
 
 .formBtn:hover {
   background: #736BD1;
   cursor: pointer;
   color: aliceblue;
-  transform: scale(0.97);
+  -webkit-transform: scale(0.97);
+          transform: scale(0.97);
 }
 
 .authButtons {
@@ -222,17 +288,22 @@ select {
 }
 
 .authButtons__logout {
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin: 2px;
   font-family: Quicksand;
   color: #736BD1;
   width: 150px;
   border-radius: 30px;
   border: 2px solid #736BD1;
-  transition: 0.6s;
+  -webkit-transition: .6s;
+  transition: .6s;
   background-color: #fff;
   overflow: hidden;
   text-decoration: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   padding-left: 5px;
 }
@@ -243,7 +314,9 @@ select {
 }
 
 .authButtons__login {
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin: 2px;
   font-family: Quicksand;
   color: #736BD1;
@@ -251,10 +324,13 @@ select {
   height: 100%;
   border-radius: 30px;
   border: 2px solid #736BD1;
-  transition: 0.6s;
+  -webkit-transition: .6s;
+  transition: .6s;
   background-color: #fff;
   overflow: hidden;
   text-decoration: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   padding-left: 5px;
   font-size: 80%;
@@ -263,20 +339,30 @@ select {
 
 @media screen and (max-width: 700px) {
   .filters {
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
   .cardForm__labeldes {
-    align-items: flex-start;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
   }
   .cardForm__inputfilter {
     width: 70%;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   .authButtons--sidemenu {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     visibility: visible;
   }
 }
+
 .login {
   background: url(../images/Iconoperfil.png) no-repeat 6px center;
   width: 50px;
@@ -289,9 +375,13 @@ select {
   background-color: #9790EA;
   margin-top: auto;
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   font-family: Quicksand;
   font-size: 10%;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   -ms-flex-pack: distribute;
   text-decoration: none;
@@ -321,6 +411,8 @@ select {
 }
 
 .list-inline {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 
@@ -339,6 +431,11 @@ select {
 }
 
 footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
-}/*# sourceMappingURL=cards.css.map */
+}
+/*# sourceMappingURL=cards.css.map */
