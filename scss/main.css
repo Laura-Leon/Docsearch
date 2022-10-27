@@ -422,6 +422,7 @@ h2 {
 
 .Prodcontainer {
   border-radius: 15px;
+  font-family: Quicksand;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -439,12 +440,10 @@ h2 {
 }
 
 .Prodcontainer:hover {
-  box-shadow: 0 0 2px 1px #736BD1;
-  transform: translateY(-5px);
   -webkit-box-shadow: 0 0 2px 1px #736BD1;
           box-shadow: 0 0 2px 1px #736BD1;
-  -webkit-transform: translateY(-10px);
-          transform: translateY(-10px);
+  -webkit-transform: translateY(-5px);
+          transform: translateY(-5px);
 }
 
 .cardForm__labeldes {
@@ -792,6 +791,10 @@ footer {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+}
+
+._blank {
+  font-family: Quicksand;
 }
 
 .modal {
