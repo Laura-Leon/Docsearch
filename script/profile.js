@@ -1,15 +1,14 @@
 //Profile es cart
 
-const list = document.querySelector('.profileList');
+const list = document.querySelector(".profileList");
 
-const checkoutForm = document.querySelector('.checkout__form');
-
+const checkoutForm = document.querySelector(".checkout__form");
 
 renderProfile = () => {
   profile.forEach((data) => {
-    const card = document.createElement('div');
+    const card = document.createElement("div");
 
-    card.classList.add('card');
+    card.classList.add("card");
     card.innerHTML = `
     <div class="Profcontainer">
             <div class="card__info">
@@ -32,23 +31,25 @@ renderProfile = () => {
     list.appendChild(card);
 
     //deletebutton
-    const deleteBtn = card.querySelector('.profile__deleteBtn');
-    deleteBtn.addEventListener('click', function () {
+    const deleteBtn = card.querySelector(".profile__deleteBtn");
+    deleteBtn.addEventListener("click", function () {
       //delete element
-      db.collection('profile').doc(data.id).delete()
-        .then(() => {
-          console.log("Document successfully deleted!");
-          console.log(data.id);
+      const docRef = db.collection("profile").doc(loggedUser.uid);
 
-
-        }).catch((error) => {
-          console.error("Error removing document: ", error);
+      docRef
+        .get()
+        .then((doc) => {
+          if (doc.exists) {
+            const prof = doc.data().profile
+            const filteredProf = prof.filter(item => item.id != data.id)
+            docRef.update({profile: filteredProf})
+          } else {
+            console.log("No such document!");
+          }
+        })
+        .catch((error) => {
+          console.log("Error getting document:", error);
         });
     });
-
-
   });
-
-
-
-}
+};
