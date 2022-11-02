@@ -28,4 +28,13 @@ function userAuthChanged (loggedIn){
         elem.classList.add('hidden');
       }
     });
+    const hideLoggedAdmin = document.querySelectorAll('.hideLoggedAdmin');
+    hideLoggedAdmin.forEach(function(elem){
+        if(loggedIn && loggedUser.admin){
+            elem.classList.add('hidden');
+        }else{
+            elem.classList.remove('hidden');
+        }
+    
+    });
 }
