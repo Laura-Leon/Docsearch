@@ -29,10 +29,6 @@ authModal.innerHTML = `
       </label>
           </div>
 
-
-
-      <button type ="button" class=" authform__register">Ir a registro</button>
-      <button type ="button" class="authform__login">Ir a ingresar</button>
       <br><button type="submit" class="authform__submit">Enviar</button>
           </div>
         </form>
@@ -43,8 +39,6 @@ authModal.innerHTML = `
 
     const authForm = authModal.querySelector('.authform');
     const regFields = authForm.querySelectorAll('.authform__regfield');
-    const registerBtn = authForm.querySelector('.authform__register');
-    const loginBtn = authForm.querySelector('.authform__login');
     const modalError = authForm.querySelector('.productForm__error');
     let isLogin = true;
     const authModalContent = authModal.querySelector('.modal__content');
@@ -54,21 +48,8 @@ authModal.innerHTML = `
       regFields.forEach(function (elem) {
         elem.classList.add('hidden');
       });
-      loginBtn.classList.add('hidden');
-      registerBtn.classList.remove('hidden');
       isLogin = true;
     }
-    
-    loginBtn.addEventListener('click', handleGoToLogin);
-    
-    registerBtn.addEventListener('click', function () {
-      regFields.forEach(function (elem) {
-        elem.classList.remove('hidden');
-      });
-      loginBtn.classList.remove('hidden');
-      registerBtn.classList.add('hidden');
-      isLogin = false;
-    });
     
     handleGoToLogin();
     
@@ -85,6 +66,7 @@ authModal.innerHTML = `
         firebase.auth().signInWithEmailAndPassword(email, password)
           .then(() => {
             handleCloseModal();
+            location.href = 'cards.html';
           })
           .catch((error) => {
             modalError.innerText = error.message;
@@ -104,6 +86,7 @@ authModal.innerHTML = `
             db.collection('users').doc(user.uid).set(userDoc);
             setLoggedUser(userDoc, user.uid);
             handleCloseModal();
+            location.href = 'cards.html';
           })
           .catch((error) => {
             modalError.innerText = error.message;
@@ -115,17 +98,12 @@ authModal.innerHTML = `
     const authButtons = document.querySelectorAll('.authButtons');
 
     authButtons.forEach((element)=>{
-      element.innerHTML = `
-      <button class="authButtons__login hideLoggedIn"> Iniciar / Registrarse</button>
-      <button class="authButtons__logout hidden showLoggedIn">Logout</button>
-      
-    `;
-
-    
+      element.innerHTML = `<button class="authButtons__logout hidden showLoggedIn">Logout</button>`;
     });
 
     
-    const authLogin = document.querySelectorAll('.authButtons__login');
+    const authLogin = document.querySelectorAll('.boton_personalizado');
+    const authRegister = document.querySelectorAll('.boton_personalizado2');
     const authLogout = document.querySelectorAll('.authButtons__logout');
     
     function handleModalAppear () {
@@ -137,6 +115,19 @@ authModal.innerHTML = `
       e.addEventListener('click', function () {
         authModal.style.display = 'block';
         document.body.style.overflow = 'hidden';
+        handleGoToLogin();
+        setTimeout(handleModalAppear, 1);
+      });
+    })
+
+    authRegister.forEach((e)=>{
+      e.addEventListener('click', function () {
+        authModal.style.display = 'block';
+        document.body.style.overflow = 'hidden';
+        regFields.forEach(function (elem) {
+          elem.classList.remove('hidden');
+        });
+        isLogin = false;
         setTimeout(handleModalAppear, 1);
       });
     })
@@ -154,7 +145,7 @@ authModal.innerHTML = `
     authLogout.forEach((element)=>{
       element.addEventListener('click', function() {
         firebase.auth().signOut();
-      location.href = '/cards.html';
+      location.href = '/login.html';
 
       });
     })
