@@ -44,21 +44,42 @@ body {
 
   .boton_personalizado{
     text-decoration: none;
-    padding: 15px; 
+    padding: 8px; 
     font-size: 20px;
     color: #736BD1;
     background-color: #ffffff;
     border-radius: 6px;
     font-size: 17px;
     font-family: 'Quicksand', sans-serif;
-    margin-left: 40%;
+    margin-left: 34%;
     position: absolute;
-    margin-top: 8%;
+    margin-top: 6%;
     
   
    
   }
   .boton_personalizado:hover{
+    color: #ffffff;
+    background-color: #736BD1;
+  }
+
+  .boton_personalizado2{
+    text-decoration: none;
+    padding: 8px; 
+    font-size: 20px;
+    color: #736BD1;
+    background-color: #ffffff;
+    border-radius: 6px;
+    font-size: 17px;
+    font-family: 'Quicksand', sans-serif;
+    margin-left: 47%;
+    position: absolute;
+    margin-top: 6%;
+    
+  
+   
+  }
+  .boton_personalizado2:hover{
     color: #ffffff;
     background-color: #736BD1;
   }
