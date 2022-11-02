@@ -19,7 +19,7 @@
 
 .formBtnagregar{
     align-items: center;
-  margin: 3px;
+    margin-bottom: 14%;
     font-family: Quicksand;
         color: #736BD1;
         width: 180px;
@@ -45,7 +45,23 @@
     display: flex;
 }
 
-.contenedores__perfil{
+.contenedores__perfil1{
+    border-radius: 15px;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    height: 30%;
+    text-decoration: none;
+    margin:20px;
+    //box-shadow: rgba(110, 51, 110, 0.2) 0px 7px 23px 0px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    white-space: inherit;
+    margin-left: 15%;
+    margin-top: 3%;
+    
+}
+
+.contenedores__perfil2{
     border-radius: 15px;
     justify-content: center;
     align-items: center;
@@ -67,7 +83,19 @@
 }
 */
 
-.informacion__perfil {
+.informacion__perfil1 {
+    padding: 10px;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-direction:column
+
+    
+}
+
+.informacion__perfil2 {
     padding: 10px;
     text-decoration: none;
     display: flex;
@@ -110,4 +138,9 @@
     font-family: Quicksand;
     color: #332f62;
    
+}
+
+.imagen__perfilicono{
+    width: 24%;
+    height: 52%;
 }
