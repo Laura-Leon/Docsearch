@@ -145,7 +145,7 @@ authModal.innerHTML = `
     authLogout.forEach((element)=>{
       element.addEventListener('click', function() {
         firebase.auth().signOut();
-      location.href = '/login.html';
+      location.href = 'login.html';
 
       });
     })
