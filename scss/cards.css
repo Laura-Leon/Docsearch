@@ -46,17 +46,8 @@
 .Prodcontainer {
   border-radius: 15px;
   font-family: Quicksand;
-<<<<<<< HEAD
   justify-content: center;
   align-items: center;
-=======
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
->>>>>>> 26852cef0fe0964cbf4a59679b4d6a06d6b148ba
   width: 350px;
   height: 96%;
   display: block;
@@ -67,10 +58,8 @@
 }
 
 .Prodcontainer:hover {
-  -webkit-box-shadow: 0 0 2px 1px #736BD1;
-          box-shadow: 0 0 2px 1px #736BD1;
-  -webkit-transform: translateY(-5px);
-          transform: translateY(-5px);
+  box-shadow: 0 0 2px 1px #736BD1;
+  transform: translateY(-5px);
 }
 
 .cardForm__labeldes {
@@ -307,6 +296,7 @@ select {
   align-items: center;
   -ms-flex-pack: distribute;
   text-decoration: none;
+  margin-top: 50px;
 }
 
 .imagen__logo {
@@ -357,9 +347,4 @@ footer {
 
 ._blank {
   font-family: Quicksand;
-<<<<<<< HEAD
 }/*# sourceMappingURL=cards.css.map */
-=======
-}
-/*# sourceMappingURL=cards.css.map */
->>>>>>> 26852cef0fe0964cbf4a59679b4d6a06d6b148ba
