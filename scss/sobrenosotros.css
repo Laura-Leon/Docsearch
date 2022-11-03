@@ -1,5 +1,7 @@
 .flexbox-container {
   display: -ms-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 
@@ -136,4 +138,5 @@ h4 {
 .titulo__3 {
   margin-left: 40%;
   padding-top: 2%;
-}/*# sourceMappingURL=sobrenosotros.css.map */
+}
+/*# sourceMappingURL=sobrenosotros.css.map */
