@@ -1,1 +1,9 @@
-{"version":3,"sources":[],"names":[],"mappings":"","file":"iniciarsesion.css"}
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "iniciarsesion.scss"
+    ],
+    "names": [],
+    "file": "iniciarsesion.css"
+}

@@ -83,10 +83,14 @@ authModal.innerHTML = `
               lastname: lastname,
               email: email,
             };
-            db.collection('users').doc(user.uid).set(userDoc);
-            setLoggedUser(userDoc, user.uid);
-            handleCloseModal();
-            location.href = 'cards.html';
+            db.collection('users').doc(user.uid).set(userDoc).then(() => {
+              setLoggedUser(userDoc, user.uid);
+              handleCloseModal();
+              location.href = 'cards.html';
+          })
+          .catch((error) => {
+              console.error("Error writing document: ", error);
+          });
           })
           .catch((error) => {
             modalError.innerText = error.message;
@@ -98,7 +102,7 @@ authModal.innerHTML = `
     const authButtons = document.querySelectorAll('.authButtons');
 
     authButtons.forEach((element)=>{
-      element.innerHTML = `<button class="authButtons__logout hidden showLoggedIn">Logout</button>`;
+      element.innerHTML = `<button class="authButtons__logout showLoggedIn">Logout</button>`;
     });
 
     
