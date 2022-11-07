@@ -1,6 +1,8 @@
 const list = document.querySelector('.list');
 
 
+
+
 const handleCollectionResult = (querySnapshot) => {
     list.innerHTML = '';
     querySnapshot.forEach((doc) => {
@@ -57,6 +59,8 @@ const handleCollectionResult = (querySnapshot) => {
 }
 
 const filters = document.querySelector('.filters');
+const searchBtn = document.querySelector('.searchBtn');
+
 
 filters.addEventListener('change', function () {
 

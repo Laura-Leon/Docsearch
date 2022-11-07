@@ -37,8 +37,12 @@
 }
 
 .boton__agregarnuevodoc{
-    margin-top: 100%;
-    margin-left: 25%;
+    display: flex; 
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
 
 .layout__perfil{
@@ -108,10 +112,10 @@
 }
 .Profcontainer{
     border-radius: 15px;
+    font-family: Quicksand;
     justify-content: center;
     align-items: center;
-    align-content: center;
-    width: 280px;
+    width: 350px;
     height: 96%;
     display: block;
     text-decoration: none;
@@ -119,6 +123,7 @@
     //box-shadow: rgba(110, 51, 110, 0.2) 0px 7px 23px 0px;
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
     white-space: inherit;
+
 }
 .titulo__perfil{
     font-family: Quicksand;

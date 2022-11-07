@@ -18,11 +18,12 @@ renderProfile = () => {
 
         <h8 class="profile__price"><b>Autor</b> ${data.author}</h8> <br>
         <h8 class="profile__price"><b>Año</b> ${data.year}</h8> <br>
-        <a href="${data.link}" target="_blank" >Click para ir a la página</a> <br>
+        
         <h8 class="profile__price"> <b>Fuente</b> ${data.source}</h8> <br>
         <h8 class="profile__price"><b>Palabras clave</b> ${data.keyword}</h8> <br>
         <h8 class="profile__price"><b>Departamento</b> ${data.department}</h8> <br>
         <h8 class="profile__price"><b>Estado</b> ${data.cardstatus}</h8> <br>
+        <a href="${data.link}" target="_blank" ><b>Click para ir a la página</b></a> <br>
         </div>
         
         <button class ="profile__deleteBtn"><img class="card__img", src="images/delete.svg"alt=""></button>
