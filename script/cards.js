@@ -48,11 +48,13 @@ const handleCollectionResult = (querySnapshot) => {
                 });
         });
         //
+        
         const profileBtn = card.querySelector('.card__profileBtn');
         profileBtn.addEventListener('click', function () {
             addToMyProfile({
                 ...data,
                 id: doc.id,
+               
             });
         });
     });

@@ -57,7 +57,7 @@ const addToMyProfile = (product) => {
   PROFILE_COLLECTION.doc(loggedUser.uid).set({
     profile,
   });
-
+ alert("Documento Agregado exitosamente, revisa tu perfil");
 };
 
 

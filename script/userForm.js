@@ -105,7 +105,7 @@ cardForm.addEventListener('submit', function (event) {
       PROFILE_COLLECTION.doc(loggedUser.uid).set({
         profile: [],
       });
-
+      alert("Documento Agregado exitosamente");
       location.href = './profile.html';
     });
 

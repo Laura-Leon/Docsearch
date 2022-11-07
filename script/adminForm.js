@@ -104,6 +104,7 @@ cardForm.addEventListener('submit', function (event) {
             cardFormLoading.classList.add('hidden');
             cardFormSuccess.classList.remove('hidden');
         cardForm.reset()
+       
     
         })
         .catch(genericCatch);

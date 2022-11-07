@@ -14,6 +14,11 @@
           
    
   }
+  .perfilBtn:hover {
+    background: #4F46B8;
+    border-radius: 15px;
+    transform: translateY(1px);
+  }
 
   .topnav {
     display: flex;
