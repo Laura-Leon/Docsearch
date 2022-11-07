@@ -106,7 +106,7 @@ cardForm.addEventListener('submit', function (event) {
         profile: [],
       });
 
-      location.href = '/profile.html';
+      location.href = './profile.html';
     });
 
   console.log(order);
