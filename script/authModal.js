@@ -29,7 +29,7 @@ authModal.innerHTML = `
       </label>
           </div>
 
-      <br><button type="submit" class="authform__submit">Enviar</button>
+      <button type="submit" class="authform__submit">Enviar</button>
           </div>
         </form>
     </article>

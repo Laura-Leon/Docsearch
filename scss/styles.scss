@@ -3,21 +3,37 @@
 body {
  background-image: url("../images/inicio.png");
  background-size: cover;
-}
+ margin:auto;
+height: 800px;
+display: flex;
+flex-direction: column;
+justify-content:center;
+align-items: center;
 
-.contenedor {
+}
+.contenedor__iniciarsesion{
+
   display: flex;
-  padding-top: 20%;
-  padding-left: 16%;
-}
+  flex-direction: column;
+  justify-content:center;
+  align-items: center;
 
+
+ // position: relative
+  
+}
+.contenedor_botones{
+
+margin-top: 60px;
+
+}
   .h1__titulo{
     color: white;
     font-size: 85px;
     font-family: 'Quicksand', sans-serif;
     font-weight: bolder;
-    margin-bottom: 2rem;
     text-align: center;
+    margin: 0;
 
 }
 
@@ -27,7 +43,7 @@ body {
     font-family: 'Quicksand', sans-serif;
     font-weight: 500;
     background:#4f46b873;
-    margin-bottom: 0.2rem;
+    
     width: fit-content;
     text-align: center;
 }
@@ -51,9 +67,7 @@ body {
     border-radius: 6px;
     font-size: 17px;
     font-family: 'Quicksand', sans-serif;
-    margin-left: 34%;
-    position: absolute;
-    margin-top: 6%;
+  
     
   
    
@@ -72,9 +86,7 @@ body {
     border-radius: 6px;
     font-size: 17px;
     font-family: 'Quicksand', sans-serif;
-    margin-left: 47%;
-    position: absolute;
-    margin-top: 6%;
+
     
   
    
@@ -84,10 +96,7 @@ body {
     background-color: #736BD1;
   }
 
-  .contenedor__iniciarsesion{
-    position: relative
-    
-  }
+
 
   .contenedor__elegir {
     background-color: #736BD1;

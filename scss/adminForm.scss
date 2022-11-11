@@ -148,7 +148,7 @@ h2{ block-size: auto;}
     font-family: Quicksand;
     font-size: 16px;
     font-weight: bolder;
-    padding-top: 2%;
+  
 
 }
 
@@ -157,18 +157,27 @@ h2{ block-size: auto;}
     border-radius: 15px;
     background-color: white;
     display: block;
-    margin-left: 35%;
-    margin-top: 17%;
-    width: fit-content;
-    padding-left: 2%;
-    padding-right: 17%;
-    padding-top: 2%;
-    padding-bottom: 4%;
+    margin-left: 40%;
+    margin-top: 10%;
+    
+    height: fit-content;
+    width: 300px;
+    padding: 30px;
+ 
 }
 
 .productForm__input{
-    width:240%;
-    border-radius: 30px;
+    color: #909090;
+    font-family: Quicksand;
+ margin-top: 10px;
+    height: 30px;
+    width: 16%;
+    border-radius: 15px;
+    border: 2px solid #C9C7E1;
+    font-family: 'Quicksand', sans-serif;
+    width: 300px;
+  max-width: 100%;
+    padding: 0 10px;
     border: 1px solid #736BD1;
 }
 
@@ -178,7 +187,7 @@ h2{ block-size: auto;}
 }
 
 .authform__submit{
-    margin-left: 82%;
+    margin-left: 25%;
 }
 
 .authform__login{
