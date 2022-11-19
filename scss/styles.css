@@ -3,17 +3,35 @@ body {
   background-size: cover;
   margin: auto;
   height: 800px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .contenedor__iniciarsesion {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .contenedor_botones {
@@ -34,7 +52,7 @@ body {
   font-size: 30px;
   font-family: 'Quicksand', sans-serif;
   font-weight: 500;
-  background: rgba(79, 70, 184, 0.4509803922);
+  background: #4f46b873;
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
@@ -58,7 +76,7 @@ body {
   background-color: #ffffff;
   border-radius: 6px;
   font-size: 17px;
-  font-family: "Quicksand", sans-serif;
+  font-family: 'Quicksand', sans-serif;
 }
 
 .boton_personalizado:hover {
@@ -74,7 +92,7 @@ body {
   background-color: #ffffff;
   border-radius: 6px;
   font-size: 17px;
-  font-family: "Quicksand", sans-serif;
+  font-family: 'Quicksand', sans-serif;
 }
 
 .boton_personalizado2:hover {
