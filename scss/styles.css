@@ -3,35 +3,17 @@ body {
   background-size: cover;
   margin: auto;
   height: 800px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .contenedor__iniciarsesion {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .contenedor_botones {
@@ -41,7 +23,7 @@ body {
 .h1__titulo {
   color: white;
   font-size: 85px;
-  font-family: 'Quicksand', sans-serif;
+  font-family: "Quicksand", sans-serif;
   font-weight: bolder;
   text-align: center;
   margin: 0;
@@ -50,9 +32,9 @@ body {
 .p__subtitulo {
   color: white;
   font-size: 30px;
-  font-family: 'Quicksand', sans-serif;
+  font-family: "Quicksand", sans-serif;
   font-weight: 500;
-  background: #4f46b873;
+  background: rgba(79, 70, 184, 0.4509803922);
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
@@ -62,7 +44,7 @@ body {
 .p__header {
   color: #736BD1;
   font-size: 22px;
-  font-family: 'Quicksand', sans-serif;
+  font-family: "Quicksand", sans-serif;
   font-weight: bolder;
   margin-bottom: 6rem;
   margin-top: 23%;
@@ -76,7 +58,7 @@ body {
   background-color: #ffffff;
   border-radius: 6px;
   font-size: 17px;
-  font-family: 'Quicksand', sans-serif;
+  font-family: "Quicksand", sans-serif;
 }
 
 .boton_personalizado:hover {
@@ -92,7 +74,7 @@ body {
   background-color: #ffffff;
   border-radius: 6px;
   font-size: 17px;
-  font-family: 'Quicksand', sans-serif;
+  font-family: "Quicksand", sans-serif;
 }
 
 .boton_personalizado2:hover {
@@ -103,12 +85,7 @@ body {
 .contenedor__elegir {
   background-color: #736BD1;
   text-align: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
   flex-direction: column;
 }
 
@@ -119,11 +96,7 @@ body {
 }
 
 .contenedor__cuadros {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
   justify-content: center;
 }
 
@@ -132,8 +105,6 @@ body {
 }
 
 .item {
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
   justify-content: center;
   background-color: white;
   border-radius: 5%;
@@ -150,18 +121,11 @@ body {
 
 @media (max-width: 768px) {
   .contenedor__elegir {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
     flex-direction: column;
   }
   .contenedor__cuadros {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
     flex-direction: column;
     padding-left: 8%;
     padding-right: 8%;
   }
-}
-/*# sourceMappingURL=styles.css.map */
+}/*# sourceMappingURL=styles.css.map */

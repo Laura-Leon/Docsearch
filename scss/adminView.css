@@ -1,0 +1,44 @@
+.orderlist {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-top: 2%;
+}
+
+.admin__btns {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.admin__deleteBtn {
+  align-items: center;
+  text-decoration: none;
+  padding: 5px;
+  font-size: 20px;
+  color: #736BD1;
+  border: 2px solid #736BD1;
+  border-radius: 6px;
+  font-size: 17px;
+  font-family: "Quicksand", sans-serif;
+  margin-top: 8px;
+  margin-right: 0;
+  width: 35px;
+  text-align: center;
+}
+
+.admin__addBtn {
+  align-items: center;
+  text-decoration: none;
+  padding: 8px;
+  font-size: 20px;
+  color: #736BD1;
+  border: 2px solid #736BD1;
+  border-radius: 6px;
+  font-size: 17px;
+  font-family: "Quicksand", sans-serif;
+  margin-top: 8px;
+  margin-right: 0;
+  width: 200px;
+  text-align: center;
+}/*# sourceMappingURL=adminView.css.map */

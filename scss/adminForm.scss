@@ -19,8 +19,9 @@
   
   .topnav {
     display: flex;
+    align-items: center;
     width: 60rem;
-    margin-left: 60%;
+ 
     a:hover {
         background: #4F46B8;
       }

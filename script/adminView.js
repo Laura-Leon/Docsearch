@@ -25,10 +25,10 @@ const handleAdminCollectionResults = (querySnapshot) => {
     <h3 class="card__price">${data.department}</h3>
     <h3 class="card__price">${data.cardstatus}</h3>
     </div>
-    
+    <section class ="admin__btns">
     <button class ="admin__deleteBtn"><img class="card__img", src="images/delete.svg"alt=""></button>
     <button class ="admin__addBtn">Agregar ficha</button>
-
+    </section>
   <div class="line"></div>
        
    </div>

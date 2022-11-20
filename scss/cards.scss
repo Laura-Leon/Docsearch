@@ -1,3 +1,4 @@
+
 .contenedorarriba__header {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -23,13 +24,12 @@
   .topnav {
     display: flex;
     width: 70rem;
-    margin-left: 37%;
+    justify-content: flex-end;
+
 
     a:hover {
         background: #4F46B8;
-        border-radius: 15px;
-
-        
+        border-radius: 15px;  
       }
     
     
@@ -178,10 +178,27 @@
 
     }
 }
+
 .formcontainer{
     display: flex;
-    flex-direction: row;
+    -webkit-box-orient: vertical;
+  
+    font-family: Quicksand;
+    align-content: center;
     justify-content: center;
+    align-items: center;
+    padding-top: 2%;
+    flex-direction: column;
+  
+   
+}
+
+.listcontainer__p{
+    color:#736BD1;
+    font-family: Quicksand;
+    text-align: center;
+font-weight: bold;
+
 }
 .cartBtn{
     margin: 10px;

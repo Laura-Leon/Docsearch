@@ -102,7 +102,7 @@ authModal.innerHTML = `
     const authButtons = document.querySelectorAll('.authButtons');
 
     authButtons.forEach((element)=>{
-      element.innerHTML = `<button class="authButtons__logout showLoggedIn">Logout</button>`;
+      element.innerHTML = `<button class="authButtons__logout showLoggedIn">Cerrar sesión</button>`;
     });
 
     

@@ -1,14 +1,13 @@
 .checkout {
 display: flex;
 justify-content: center;
-width: 700px;
+
 margin: 0 auto;
 box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 &__list{
-    width: 50%;
+    
     display: flex;
     flex-wrap: wrap;
-    margin: 0 auto;
     justify-content: center;
 }
 &__sumary{
@@ -50,7 +49,7 @@ font-size: 1em;
 
 }
 .checkout__list{
-width: 300px;
+
 margin: 0;
 
 }

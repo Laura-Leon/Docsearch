@@ -6,6 +6,8 @@
 @import "modal";
 @import "checkout";
 @import "graphics";
+@import "adminView";
+
 
 
 
@@ -179,18 +181,26 @@ body {
     }
 
 }
+.name__user{
+    color: #FFFFFF;
+    font-size: 14px;
+    margin: 0;
+    margin-left: 8px;
+    margin-right: 8px;
+
+
+}
   button{
         font-family: Quicksand;
         color: #736BD1;
-        width: 130px;
         border-radius: 30px;
         border: 2px solid #736BD1;
         transition: .6s;
         background: none;
         overflow: hidden;
         font-size: 11px;
-        margin-left: 25%;
-        margin-top: 2%;
+       
+
         
        
       

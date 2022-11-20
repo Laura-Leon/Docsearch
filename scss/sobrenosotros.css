@@ -1,17 +1,13 @@
 .flexbox-container {
   display: -ms-flex;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .flexbox-container > div {
   width: 100%;
   padding: 4%;
-}
-
-.flexbox-container > div:first-child {
-  margin-right: 50px;
 }
 
 h4 {
@@ -24,8 +20,8 @@ h4 {
 }
 
 .imagen__descripcion {
-  width: 90%;
-  height: 93%;
+  width: 80%;
+  height: auto;
 }
 
 .contenedor__abajosobre {
@@ -42,101 +38,49 @@ h4 {
   padding-top: 1%;
 }
 
-.imagen__diana {
+.imagen__personas {
   width: 34%;
-  height: 62%;
-  margin-left: 50%;
+  height: auto;
 }
 
-.nombre__titulo1 {
-  margin-left: 58%;
+.nombre__titulo {
+  text-align: center;
 }
 
-.titulo__diana {
-  font-size: 15px;
-  margin-left: 42%;
-  color: #383b3b;
+.beneficios__container {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  margin: 0;
+  justify-content: center;
+  align-items: center;
 }
 
-.imagen__laura {
-  width: 34%;
-  height: 62%;
-  margin-left: 8%;
+.personas__container {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  margin: 0;
+  justify-content: center;
+  align-items: center;
 }
 
-.nombre__titulo2 {
-  margin-left: 17%;
-}
-
-.titulo__laura {
-  font-size: 15px;
-  margin-left: 1%;
-  color: #383b3b;
-}
-
-.imagen__beneficio1 {
-  width: 46%;
-  height: 57%;
-  margin-left: 48%;
-}
-
-.imagen__beneficio2 {
-  width: 46%;
-  height: 57%;
-  margin-left: 19%;
-}
-
-.imagen__beneficio3 {
-  width: 46%;
-  height: 57%;
-  margin-left: 3%;
-}
-
-.nombre__titulobene1 {
-  margin-left: 59%;
-}
-
-.nombre__titulobene2 {
-  margin-left: 33%;
-}
-
-.nombre__titulobene3 {
-  margin-left: 14%;
-}
-
-.imagen__javier {
-  width: 34%;
-  height: 62%;
-  margin-left: 50%;
-}
-
-.nombre__titulojavier {
-  margin-left: 56%;
-}
-
-.titulo__javier {
-  font-size: 15px;
-  margin-left: 38%;
-  color: #383b3b;
-}
-
-.imagen__enrique {
-  width: 34%;
-  height: 62%;
-  margin-left: 12%;
-}
-
-.nombre__tituloenrique {
-  margin-left: 15%;
-}
-
-.titulo__enrique {
+.h4__descripcion {
   font-size: 15px;
   color: #383b3b;
+  text-align: center;
+}
+
+.imagen__beneficio {
+  width: 34%;
+  height: auto;
+}
+
+.nombre__titulobene {
+  text-align: center;
 }
 
 .titulo__3 {
   margin-left: 40%;
   padding-top: 2%;
-}
-/*# sourceMappingURL=sobrenosotros.css.map */
+}/*# sourceMappingURL=sobrenosotros.css.map */
