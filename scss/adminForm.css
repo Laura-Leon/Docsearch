@@ -155,7 +155,20 @@ h2 {
 }
 
 .authform__submit {
-  margin-left: 25%;
+  color: #ffffff;
+  font-family: Quicksand;
+  background-color: #736BD1;
+  margin-top: 10px;
+  height: 30px;
+  width: 16%;
+  border-radius: 15px;
+  border: 3px solid #C9C7E1;
+  font-family: "Quicksand", sans-serif;
+  font-weight: bold;
+  width: 300px;
+  max-width: 100%;
+  padding: 0 10px;
+  border: 3px solid #736BD1;
 }
 
 .authform__login {

@@ -27,10 +27,11 @@ const handleCollectionResult = (querySnapshot) => {
         <a href="${data.link}" target="_blank" ><b>Click para ver info completa</b></a>
         </div>
        
-
+        <div class="card__btns">
         <button class= "card__profileBtn">Agregar a favoritos</button>
         <button class ="card__deleteBtn hidden showLoggedAdmin"><img class="card__img", src="images/delete.svg"alt=""></button>
-   </div>
+        </div>
+        </div>
         `;
 
         list.appendChild(card);

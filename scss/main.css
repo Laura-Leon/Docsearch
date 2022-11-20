@@ -275,7 +275,20 @@ h2 {
 }
 
 .authform__submit {
-  margin-left: 25%;
+  color: #ffffff;
+  font-family: Quicksand;
+  background-color: #736BD1;
+  margin-top: 10px;
+  height: 30px;
+  width: 16%;
+  border-radius: 15px;
+  border: 3px solid #C9C7E1;
+  font-family: "Quicksand", sans-serif;
+  font-weight: bold;
+  width: 300px;
+  max-width: 100%;
+  padding: 0 10px;
+  border: 3px solid #736BD1;
 }
 
 .authform__login {
@@ -361,6 +374,32 @@ h2 {
   font-family: Quicksand;
   font-weight: bolder;
   width: 30%;
+}
+
+.card__btns {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card__profileBtn {
+  font-family: Quicksand;
+  margin-left: 10px;
+  margin-right: 10px;
+  height: 30px;
+  width: 150px;
+  border-radius: 15px;
+  border: 2px solid #736BD1;
+  font-family: "Quicksand", sans-serif;
+  font-weight: bold;
+}
+
+.card__deleteBtn {
+  height: auto;
+  width: 34px;
+  height: 34px;
+  border-radius: 15px;
+  border: 2px solid #736BD1;
 }
 
 .cardForm__inputfilter {
@@ -483,17 +522,21 @@ select {
 
 .formBtn {
   align-items: center;
-  text-decoration: none;
-  padding: 8px;
-  font-size: 20px;
   color: #736BD1;
-  border: 2px solid #736BD1;
-  border-radius: 6px;
-  font-size: 17px;
+  font-family: Quicksand;
+  background-color: #ffffff;
+  height: 30px;
+  width: 16%;
+  border-radius: 15px;
+  border: 3px solid #C9C7E1;
   font-family: "Quicksand", sans-serif;
-  margin-top: 8px;
+  font-weight: normal;
+  width: 300px;
+  max-width: 100%;
+  margin-top: 10px;
+  margin-left: 0;
   margin-right: 0;
-  width: 280px;
+  border: 3px solid #736BD1;
   text-align: center;
 }
 
@@ -747,12 +790,6 @@ footer {
     margin: 0;
   }
 }
-.profile__deleteBtn {
-  width: 50px;
-  height: 50px;
-  margin: 10px;
-}
-
 .body {
   justify-content: center;
 }
