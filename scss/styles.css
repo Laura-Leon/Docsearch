@@ -51,6 +51,7 @@ body {
 }
 
 .boton_personalizado {
+  cursor: pointer;
   text-decoration: none;
   padding: 8px;
   font-size: 20px;
@@ -62,11 +63,13 @@ body {
 }
 
 .boton_personalizado:hover {
+  cursor: pointer;
   color: #ffffff;
   background-color: #736BD1;
 }
 
 .boton_personalizado2 {
+  cursor: pointer;
   text-decoration: none;
   padding: 8px;
   font-size: 20px;
@@ -78,6 +81,7 @@ body {
 }
 
 .boton_personalizado2:hover {
+  cursor: pointer;
   color: #ffffff;
   background-color: #736BD1;
 }

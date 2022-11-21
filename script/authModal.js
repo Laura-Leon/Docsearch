@@ -145,6 +145,12 @@ authModal.innerHTML = `
         authModal.style.display = 'none';
       }, 500);
     }
+
+    window.onclick = function(e) {
+      if (e.target == authModal) {
+        authModal.style.display = "none";
+      }
+    }
     
     authLogout.forEach((element)=>{
       element.addEventListener('click', function() {
