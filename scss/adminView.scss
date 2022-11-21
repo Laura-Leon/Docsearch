@@ -7,35 +7,37 @@
 .admin__btns{
     display: flex;
     align-items: center;
-    justify-content:space-around;
+    justify-content:center;
 }
 .admin__deleteBtn{
-    align-items: center;
-    text-decoration: none;
-    padding: 5px;
-    font-size: 20px;
     color: #736BD1;
-    border: 2px solid #736BD1;
-    border-radius: 6px;
-    font-size: 17px;
-    font-family: "Quicksand", sans-serif;
+    background-color: #ffffff;
     margin-top: 8px;
-    margin-right: 0;
-    width: 35px;
-    text-align: center;
+    height: 34px;
+    width: 34px;
+    border-radius: 15px;
+    border: 3px solid #C9C7E1;
+   
+    border: 3px solid #736BD1;
+    margin-right: 5px;
+    margin-left: 5px;
+
 }
 .admin__addBtn{
-    align-items: center;
-    text-decoration: none;
-    padding: 8px;
-    font-size: 20px;
+    margin-right: 5px;
+    margin-left: 5px;
     color: #736BD1;
-    border: 2px solid #736BD1;
-    border-radius: 6px;
-    font-size: 17px;
-    font-family: "Quicksand", sans-serif;
+    font-family: Quicksand;
+    background-color: #ffffff;
     margin-top: 8px;
-    margin-right: 0;
-    width: 200px;
-    text-align: center;
+    height: 30px;
+    width: 16%;
+    border-radius: 15px;
+    border: 3px solid #C9C7E1;
+    font-family: "Quicksand", sans-serif;
+    font-weight: bold;
+    width: 150px;
+    max-width: 100%;
+    padding: 0 10px;
+    border: 3px solid #736BD1;
 }
