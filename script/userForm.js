@@ -25,8 +25,7 @@ cardForm.addEventListener('submit', function (event) {
         link: cardForm.link.value,
         keyword: cardForm.keyword.value,
         department: cardForm.department.value,
-        lat: cardForm.lat.value,
-        long: cardForm.long.value,
+       
         cardstatus: cardForm.cardstatus.value,
         //sizes: [],
 
@@ -67,16 +66,7 @@ cardForm.addEventListener('submit', function (event) {
         cardFormError.classList.remove('hidden');
         return;
     }
-    if (!order.lat) {
-        cardFormError.innerText = 'Necesitas agregar la latitud en grados decimales del departamento seleccionado';
-        cardFormError.classList.remove('hidden');
-        return;
-    }
-    if (!order.long) {
-        cardFormError.innerText = 'Necesitas agregar la longuitud en grados decimales del departamento seleccionado';
-        cardFormError.classList.remove('hidden');
-        return;
-    }
+   
     if (!order.cardstatus) {
         cardFormError.innerText = 'Necesitas agregar en que estado se encuentra el documento, si está disponible en linea o en una biblioteca física';
         cardFormError.classList.remove('hidden');

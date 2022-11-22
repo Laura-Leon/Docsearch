@@ -3,15 +3,11 @@ const cardFormSuccess = document.querySelector('.cardForm__success');
 const cardFormLoading = document.querySelector('.cardForm__loading');
 const cardFormError = document.querySelector('.cardForm__error');
 
-
-
 cardForm.cardstatus.addEventListener('change', function () {
     console.log(cardForm.cardstatus.value);
 })
 
 //esta es una prueba, recosdar que no voy a agregar imagenes 
-
-
 //eventos de cada uno de los botones que deben fucnionar para agregar nuevas fichas al documento 
 
 cardForm.addEventListener('submit', function (event) {
@@ -26,8 +22,6 @@ cardForm.addEventListener('submit', function (event) {
         link: cardForm.link.value,
         keyword: cardForm.keyword.value,
         department: cardForm.department.value,
-        lat: cardForm.lat.value,
-        long: cardForm.long.value,
         cardstatus: cardForm.cardstatus.value,
         //sizes: [],
 
@@ -67,17 +61,7 @@ cardForm.addEventListener('submit', function (event) {
         cardFormError.innerText = 'Necesitas agregar el departamento del que habla el texto o un departamento aproximado';
         cardFormError.classList.remove('hidden');
         return;
-    }
-    if (!card.lat) {
-        cardFormError.innerText = 'Necesitas agregar la latitud en grados decimales del departamento seleccionado';
-        cardFormError.classList.remove('hidden');
-        return;
-    }
-    if (!card.long) {
-        cardFormError.innerText = 'Necesitas agregar la longuitud en grados decimales del departamento seleccionado';
-        cardFormError.classList.remove('hidden');
-        return;
-    }
+    }  
     if (!card.cardstatus) {
         cardFormError.innerText = 'Necesitas agregar en que estado se encuentra el documento, si está disponible en linea o en una biblioteca física';
         cardFormError.classList.remove('hidden');
@@ -85,13 +69,9 @@ cardForm.addEventListener('submit', function (event) {
     }
     console.log(card);
 
-  
-
     cardFormLoading.classList.remove('hidden');
     cardFormError.classList.add('hidden');
   
-
-
     const genericCatch = function (error) {
         cardFormLoading.classList.add('hidden');
         cardFormError.classList.remove('hidden');

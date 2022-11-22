@@ -14,7 +14,7 @@ const handleAdminCollectionResults = (querySnapshot) => {
         customer.innerHTML = `
         <div class="Prodcontainer">
         <div class="card__info">
-         <h1 class=" =card__title">
+         <h1 class=" card__title">
     ${data.title}
      </h1>
     <h3 class="card__price">${data.author}</h3>
@@ -69,8 +69,6 @@ const handleAdminCollectionResults = (querySnapshot) => {
                 link: data.link,
                 keyword: data.keyword,
                 department: data.department,
-                lat: data.lat,
-                long: data.long,
                 cardstatus: data.cardstatus,
         
             };
@@ -107,16 +105,6 @@ const handleAdminCollectionResults = (querySnapshot) => {
     }
     if (!card.department) {
         adminError.innerText = 'Necesitas agregar el departamento del que habla el texto o un departamento aproximado';
-        adminError.classList.remove('hidden');
-        return;
-    }
-    if (!card.lat) {
-        adminError.innerText = 'Necesitas agregar la latitud en grados decimales del departamento seleccionado';
-        adminError.classList.remove('hidden');
-        return;
-    }
-    if (!card.long) {
-        adminError.innerText = 'Necesitas agregar la longuitud en grados decimales del departamento seleccionado';
         adminError.classList.remove('hidden');
         return;
     }

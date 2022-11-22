@@ -51,8 +51,7 @@
 }
 .cardForm__btn {
   margin-top: 2%;
-  display: block;
-  margin-left: 75%;
+  width: 100px;
 }
 .cardForm__success {
   color: rgb(94, 218, 145);
@@ -69,6 +68,11 @@
 }
 .cardForm__images {
   display: flex;
+}
+
+.cont__btn {
+  display: flex;
+  justify-content: center;
 }
 
 .cardForm__input {
