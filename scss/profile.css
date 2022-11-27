@@ -51,6 +51,7 @@
 }
 
 .contenedores__perfil1 {
+  background-color: #ffffff;
   border-radius: 15px;
   justify-content: center;
   align-items: center;
@@ -72,6 +73,7 @@
 }
 
 .informacion__perfil2 {
+  background-color: #ffffff;
   min-width: 1300px;
   display: flex;
   flex-direction: column;

@@ -159,8 +159,9 @@
 
 .cardForm {
   display: flex;
+  justify-content: center;
   flex-direction: column;
-  width: 60%;
+  width: 800px;
   padding-top: 1%;
   margin: 0 auto;
   flex-direction: column;
@@ -211,16 +212,18 @@
 }
 .field__input,
 .cardForm__input {
-  display: block;
-  background: #fff;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  outline: 0;
-  box-shadow: none;
-  border: 0 !important;
-  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
-  padding: 1%;
+  color: #909090;
+  font-family: Quicksand;
+  margin-top: 10px;
+  height: 30px;
+  width: 16%;
+  border-radius: 15px;
+  border: 2px solid #C9C7E1;
+  font-family: "Quicksand", sans-serif;
+  width: 800px;
+  max-width: 100%;
+  padding: 0 10px;
+  border: 1px solid #736BD1;
 }
 
 .adminview {
@@ -303,6 +306,10 @@ h2 {
   display: none !important;
 }
 
+body {
+  background-color: #F6F9FE;
+}
+
 .contenedorarriba__header {
   display: flex;
   max-height: 12vh;
@@ -322,10 +329,6 @@ h2 {
   display: flex;
   width: 70rem;
   justify-content: flex-end;
-}
-.topnav a:hover {
-  background: #4F46B8;
-  border-radius: 15px;
 }
 
 .navitem {
@@ -355,6 +358,7 @@ h2 {
 }
 
 .Prodcontainer {
+  background-color: #ffffff;
   border-radius: 15px;
   font-family: Quicksand;
   justify-content: center;
@@ -496,6 +500,7 @@ select {
   font-family: Quicksand;
   text-align: center;
   font-weight: bold;
+  width: 800px;
 }
 
 .cartBtn {
@@ -542,6 +547,14 @@ select {
   margin-right: 0;
   border: 3px solid #736BD1;
   text-align: center;
+}
+
+.card__link {
+  color: #4FD3C4;
+}
+
+.card__link:hover {
+  color: #C1F8CF;
 }
 
 .formBtn:focus {

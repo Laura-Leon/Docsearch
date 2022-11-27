@@ -39,8 +39,9 @@
 
 .cardForm {
   display: flex;
+  justify-content: center;
   flex-direction: column;
-  width: 60%;
+  width: 800px;
   padding-top: 1%;
   margin: 0 auto;
   flex-direction: column;
@@ -91,16 +92,18 @@
 }
 .field__input,
 .cardForm__input {
-  display: block;
-  background: #fff;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  outline: 0;
-  box-shadow: none;
-  border: 0 !important;
-  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
-  padding: 1%;
+  color: #909090;
+  font-family: Quicksand;
+  margin-top: 10px;
+  height: 30px;
+  width: 16%;
+  border-radius: 15px;
+  border: 2px solid #C9C7E1;
+  font-family: "Quicksand", sans-serif;
+  width: 800px;
+  max-width: 100%;
+  padding: 0 10px;
+  border: 1px solid #736BD1;
 }
 
 .adminview {

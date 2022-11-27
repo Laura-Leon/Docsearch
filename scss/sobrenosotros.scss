@@ -29,7 +29,11 @@ h4{
 }
 
 .contenedor__abajosobre{
-    background-color: #F6F9FE;    
+    background-color: #F6F9FE;  
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;  
 }
 
 .titulo__2{
@@ -87,7 +91,7 @@ align-items: center;
 }
 
 .titulo__3{
-    margin-left: 40%;
+    
     padding-top: 2%;
 }
 

@@ -1,3 +1,7 @@
+body {
+  background-color: #F6F9FE;
+}
+
 .contenedorarriba__header {
   display: flex;
   max-height: 12vh;
@@ -17,10 +21,6 @@
   display: flex;
   width: 70rem;
   justify-content: flex-end;
-}
-.topnav a:hover {
-  background: #4F46B8;
-  border-radius: 15px;
 }
 
 .navitem {
@@ -50,6 +50,7 @@
 }
 
 .Prodcontainer {
+  background-color: #ffffff;
   border-radius: 15px;
   font-family: Quicksand;
   justify-content: center;
@@ -191,6 +192,7 @@ select {
   font-family: Quicksand;
   text-align: center;
   font-weight: bold;
+  width: 800px;
 }
 
 .cartBtn {
@@ -237,6 +239,14 @@ select {
   margin-right: 0;
   border: 3px solid #736BD1;
   text-align: center;
+}
+
+.card__link {
+  color: #4FD3C4;
+}
+
+.card__link:hover {
+  color: #C1F8CF;
 }
 
 .formBtn:focus {

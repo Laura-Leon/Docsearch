@@ -24,7 +24,7 @@ const handleCollectionResult = (querySnapshot) => {
         <h3 class="card__price"><b>Palabras clave:</b> ${data.keyword}</h3>
         <h3 class="card__price"> <b>Departamento:</b> ${data.department}</h3>
         <h3 class="card__price"><b>Estado:</b> ${data.cardstatus}</h3>
-        <a href="${data.link}" target="_blank" ><b>Click para ver info completa</b></a>
+        <a class="card__link" href="${data.link}" target="_blank" ><b>Click para ver info completa</b></a>
         </div>
        
         <div class="card__btns">
